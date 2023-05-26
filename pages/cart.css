@@ -1,0 +1,232 @@
+.main {
+  margin-top: 4.5rem;
+  margin-bottom: 2rem;
+  min-height: calc(100vh - 7rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  place-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.cart .cartItem {
+  background-color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  max-width: 250px;
+  height: max-content;
+  overflow: hidden;
+  margin: 0 auto;
+  gap: 1rem;
+}
+.cart .cartItem .cartItem-img {
+  max-width: 100%;
+  max-height: 100%;
+  aspect-ratio: 4/4;
+  object-position: center 0;
+  object-fit: contain;
+  flex-grow: 1;
+}
+.cart .cartItem .cartItem-text {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.cart .cartItem .del-item {
+  width: 4rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--second-color);
+}
+
+.cart .cartItem .cartItem-text span {
+  font-size: calc(1vw + 0.5rem);
+  color: var(--first-color);
+  font-weight: bold;
+}
+.cart .cartItem .cartItem-text small {
+  font-size: 10px;
+  color: var(--gray-dark-color);
+}
+
+.cart .cartItem .cartItem-img img {
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+}
+
+.cart-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  padding: 0 1rem;
+}
+
+.cart-actions div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+
+.cart-actions button {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--first-color);
+  color: var(--white-color);
+}
+.cart-actions button:first-of-type {
+  background-color: var(--second-color);
+}
+
+.cart-actions .clear-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+/* CUANDO EL CARRITO ESTÁ VACÍO */
+
+.empty-cart {
+  width: 100vw;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--gray-dark-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* CUANDO SE COMPRAN LOS PRODUCTOS DEL CARRITO */
+
+.success-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 80vw;
+  height: max-content;
+  padding: 1.25rem;
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  gap: 1rem;
+  background-color: var(--white-alpha-color);
+  backdrop-filter: blur(20px);
+}
+
+.success-modal-bg {
+  position: absolute;
+  inset: 0;
+  background-color: var(--black-alpha-color);
+  z-index: -10;
+}
+.success-modal h1 {
+  color: var(--first-color);
+  font-size: 2rem;
+  font-weight: bold;
+}
+.success-modal span {
+  color: var(--second-color);
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.success-modal p {
+  color: var(--gray-dark-color);
+  font-size: 0.8rem;
+}
+
+/* MODAL DE COMPRA */
+
+.form {
+  width: 90vw;
+  gap: 0.5rem;
+  z-index: 9999;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form button {
+  width: 100%;
+}
+
+@media (min-width: 320px) {
+}
+
+@media (min-width: 375px) {
+}
+
+@media (min-width: 414px) {
+  .form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+
+  .form h2 {
+    grid-column: span 2;
+  }
+
+  .form button {
+    width: 10rem;
+  }
+  .form > input {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 480px) {
+  .cart-actions {
+    flex-direction: row;
+  }
+  .cart-actions button {
+    width: 0;
+    min-width: max-content;
+  }
+  .cart-actions {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 768px) {
+  .form {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+  .main {
+    margin-top: 0;
+  }
+}

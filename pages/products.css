@@ -1,0 +1,223 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.main {
+  margin-top: 4rem;
+  width: 100vw;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* ***** FORM ***** */
+.products-aside-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  gap: 1rem;
+}
+.products-form {
+  margin: 1rem;
+  margin-bottom: 0;
+  display: grid;
+  place-content: center;
+  position: relative;
+}
+
+.products-form .search-placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.products-form .search-placeholder svg {
+  fill: var(--gray-dark-color);
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.products-form .search-placeholder span {
+  color: var(--gray-dark-color);
+}
+
+.products-form form input {
+  width: 70vw;
+  height: 2.5rem;
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+
+.products-form form input:focus ~ .search-placeholder,
+.products-form form input:not(:empty) ~ .search-placeholder {
+  display: none;
+}
+
+/* ***** CATEGORIES ***** */
+.products-categories {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  width: 100vw;
+  overflow-x: auto;
+  height: 5rem;
+  padding: 0 1rem;
+}
+
+.products-categories::-webkit-scrollbar {
+  display: none;
+}
+
+.products-categories button {
+  padding: 0.7rem 1rem;
+  min-width: max-content;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  background-color: #799dfa;
+  color: var(--first-color);
+  box-shadow: var(--box-shadow);
+}
+
+.products-categories button.active {
+  color: var(--white-color);
+  background-color: var(--first-color);
+}
+/* ***** PRODUCT CARDS ***** */
+
+/* IMPORTANTE: los estilos de esta seccion se toman de la hoja "utilities.css" */
+
+@media (min-width: 320px) {
+}
+
+@media (min-width: 375px) {
+}
+
+@media (min-width: 414px) {
+}
+
+@media (min-width: 480px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+  .main {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0;
+    background-color: var(--first-color);
+  }
+
+  .products-aside-container {
+    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: var(--first-color);
+    flex-grow: 1;
+    overflow: hidden;
+  }
+
+  .products-cards {
+    background-color: var(--gray-color);
+    border-radius: 30px;
+    flex-grow: 6;
+    min-width: 70vw;
+    min-height: 99vh;
+  }
+
+  .products-form {
+    flex-grow: 1;
+  }
+
+  .products-form form input {
+    width: 20vw;
+  }
+
+  .products-categories {
+    width: 100%;
+    height: 70vh;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2rem;
+    overflow-y: scroll;
+    padding: 0.5rem 0;
+    flex-grow: 6;
+  }
+
+  .products-categories button {
+    width: 80%;
+    height: 3rem;
+    background-color: var(--first-color);
+    border-radius: 20px 0 0 20px;
+    justify-content: flex-end;
+    color: var(--white-color);
+    position: relative;
+  }
+
+  .products-categories button.active {
+    background-color: var(--gray-color);
+    color: var(--first-color);
+  }
+
+  .products-categories button.active::before {
+    box-shadow: 1.5px 5px 0 var(--gray-color);
+  }
+  .products-categories button.active::after {
+    box-shadow: 1.5px -5px 0 var(--gray-color);
+  }
+
+  .products-categories button::before {
+    position: absolute;
+    content: "";
+    width: 0.5rem;
+    height: 1rem;
+    background-color: transparent;
+    right: 0;
+    bottom: 100%;
+    border-bottom-right-radius: 0.5rem;
+    box-shadow: 1px 5px 0 var(--first-color);
+  }
+  .products-categories button::after {
+    position: absolute;
+    content: "";
+    width: 1rem;
+    height: 2rem;
+    background-color: transparent;
+    right: 0;
+    top: 100%;
+    border-top-right-radius: 0.5rem;
+    box-shadow: 2rem 2rem 0 var(--second-color);
+  }
+
+  .products-cards {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    width: 70vw;
+  }
+
+  .footer {
+    width: 70vw;
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main {
+    margin-top: 0;
+  }
+}

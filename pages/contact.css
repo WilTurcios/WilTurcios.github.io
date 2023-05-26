@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  margin: 0 auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.main .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.section {
+  width: 100vw;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-text-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1rem;
+  gap: 1rem;
+
+  background-color: var(--second-alpha-color);
+  color: var(--black-color);
+}
+
+.contact-text-section article h1,
+.contact-text-section article h3,
+.contact-text-section article strong {
+  color: var(--white-color);
+}
+
+.contact-form-section {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 1rem;
+  background-color: var(--first-alpha-color);
+}
+
+.contact-form-section .contact-form-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 1.5rem;
+}
+.contact-form-section .contact-form-text h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--white-color);
+}
+.contact-form-section .contact-form-text p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--white-alpha-color);
+}
+
+.form div:last-of-type {
+  grid-column: span 2;
+}
+
+@media (min-width: 320px) {
+}
+
+@media (min-width: 375px) {
+  .form {
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+
+  .form h2 {
+    grid-column: span 2;
+  }
+  .form > input {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 414px) {
+}
+
+@media (min-width: 480px) {
+}
+
+@media (min-width: 768px) {
+  .contact-form-section {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .contact-form-section .contact-form-text {
+    width: 40vw;
+    align-items: flex-start;
+    text-align: start;
+  }
+  .contact-form-container {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-text-section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+  .main {
+    margin-top: 0.5rem;
+  }
+}

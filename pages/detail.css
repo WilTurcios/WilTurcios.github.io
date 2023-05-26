@@ -1,0 +1,197 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.detail-card {
+  height: calc(100vh - 4rem);
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.detail-card .detail-card-title {
+  margin: 1rem;
+  padding: 1rem;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.detail-card .back {
+  position: absolute;
+  top: 6.2rem;
+  left: 1rem;
+  width: 2rem;
+  height: 2rem;
+  color: var(--second-color);
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.detail-card .back svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.detail-card .detail-card-title h1 {
+  text-align: center;
+  font-size: calc(4vw + 0.5rem);
+  color: var(--first-color);
+}
+
+.detail-card .detail-card-img {
+  display: grid;
+  place-content: center;
+  width: 100%;
+  padding: 2rem;
+}
+
+.detail-card .detail-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.detail-card .detail-card-content-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  padding-top: 1.5rem;
+  border-radius: 30px 30px 0 0;
+  background-color: var(--white-color);
+  color: var(--gray-dark-color);
+}
+
+.detail-card .detail-card-content h2 {
+  text-align: center;
+  font-size: 1rem;
+}
+.detail-card .detail-card-content p {
+  font-size: 0.7rem;
+}
+
+.detail-card .detail-card-content span {
+  color: var(--price-color);
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.detail-card .detail-card-actions {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.detail-card-actions button {
+  width: 100%;
+  order: 1;
+}
+
+.detail-card-actions div.call-to-action {
+  width: max-content;
+  padding: 0.5rem 1rem;
+}
+
+.detail-card-actions div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.7rem 1rem;
+}
+
+.detail-card-actions div select {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--white-color);
+  padding: 8px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.detail-card-actions div:hover > select {
+  cursor: pointer;
+  color: var(--second-color);
+}
+
+@media (min-width: 320px) {
+}
+
+@media (min-width: 375px) {
+  .detail-card .detail-card-content-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.5rem;
+    border-radius: 30px 30px 0 0;
+    background-color: var(--white-color);
+    color: var(--gray-dark-color);
+  }
+
+  .detail-card .detail-card-content h2 {
+    text-align: start;
+    font-size: 1.8rem;
+  }
+
+  .detail-card .detail-card-content p {
+    font-size: 1rem;
+  }
+  .detail-card .detail-card-content span {
+    color: var(--price-color);
+    font-size: calc(4vw + 1.5rem);
+    font-weight: 900;
+  }
+
+  .detail-card .detail-card-actions {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .detail-card-actions button {
+    width: 60%;
+  }
+  .detail-card-actions div {
+    width: 30%;
+  }
+}
+
+@media (min-width: 414px) {
+}
+
+@media (min-width: 480px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
