@@ -59,6 +59,10 @@ if (path === "/index.html") {
   });
 }
 
+if (path === "/pages/cart.html") {
+  Cart();
+}
+
 d.addEventListener("DOMContentLoaded", (e) => {
   if (path !== "/pages/detail.html") {
     NavigationControl();
@@ -117,10 +121,6 @@ d.addEventListener("DOMContentLoaded", (e) => {
 
   if (path === "/pages/products.html") {
     Categories({ PRODUCTS });
-  }
-
-  if (path === "/pages/cart.html") {
-    Cart();
   }
 
   if (path === "/pages/detail.html") {
