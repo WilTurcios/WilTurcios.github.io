@@ -41,7 +41,7 @@ body::-webkit-scrollbar {
 }
 
 .detail-card .detail-card-title h1 {
-  font-size: calc(3vw + 0.5rem);
+  font-size: calc(1vw + 1rem);
   color: var(--first-color);
   min-width: max-content;
   margin: 0 auto;
@@ -191,6 +191,9 @@ body::-webkit-scrollbar {
 }
 
 @media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
   .detail {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -240,9 +243,7 @@ body::-webkit-scrollbar {
   .call-to-action {
     max-width: 100%;
   }
-}
 
-@media (min-width: 768px) {
   .detail-card .detail-card-actions {
     justify-content: space-between;
   }
