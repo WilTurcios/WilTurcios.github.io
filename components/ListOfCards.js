@@ -25,7 +25,7 @@ export default function ListOfCards({
 }
 
 document.addEventListener("click", (e) => {
-  if (e.target.matches(".card a")) {
+  if (e.target.matches(".card a") || e.target.matches(".card a *")) {
     const ID = +e.target.getAttribute("data-id");
     const product = JSON.stringify(PRODUCTS.filter((p) => p.id === ID));
 
