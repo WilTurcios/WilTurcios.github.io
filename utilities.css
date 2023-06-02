@@ -1,7 +1,7 @@
 /* ***** BUTTONS ***** */
 .primary-btn,
 .call-to-action {
-  width: max-contents;
+  max-width: max-content;
   box-sizing: border-box;
   height: max-content;
   color: white;
@@ -29,6 +29,10 @@
   border-color: var(--color);
   color: var(--first-color);
   color: var(--color);
+}
+
+.primary-btn:hover svg {
+  fill: var(--first-color) !important;
 }
 
 .primary-btn:focus,
@@ -197,6 +201,16 @@
 .products-cards .card a {
   width: 100%;
   padding: 0.6rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.products-cards .card a svg {
+  fill: var(--white-color);
+  width: 1.5em;
+  height: 1.5rem;
 }
 
 /* Formulario */

@@ -14,28 +14,32 @@ export default function Detail({ target }) {
   <button class="back">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M16 22L6 12L16 2l1.775 1.775L9.55 12l8.225 8.225L16 22Z"/></svg>
   </button>
-  <div class="detail-card-title">
+  <div class="detail-header">
+    <div class="detail-card-title">
     <h1>${productName}</h1>
+    </div>
+    <div class="detail-card-img">
+      <img src=${imgUrl} alt=${productName}>
+    </div>
   </div>
-  <div class="detail-card-img">
-    <img src=${imgUrl} alt=${productName}>
-  </div>
-  <div class="detail-card-content-container">
-    <div class="detail-card-content">
-    <h2>${productName}</h2>
-    <span id="price" >$${pricing.S}</span>
-    <p>${productDescription}</p>
-  </div>
-  <div class="detail-card-actions">
-    <button id=${id} style="--color: var(--first-color)"  class="call-to-action add-to-cart-btn" >
-      Agregar al carrito
-    </button>
-    <div style="--color: var(--second-color);"  class="call-to-action">
-      <label for="sizes">
-        Talla:
-      </label>
-      <select id="sizes">
-      </select>
+  <div class="detail-body">
+    <div class="detail-card-content-container">
+      <div class="detail-card-content">
+      <h2>${productName}</h2>
+      <span id="price" >$${pricing.S}</span>
+      <p>${productDescription}</p>
+    </div>
+    <div class="detail-card-actions">
+      <button id=${id} style="--color: var(--first-color)"  class="call-to-action add-to-cart-btn" >
+        Agregar al carrito
+      </button>
+      <div style="--color: var(--second-color);"  class="call-to-action">
+        <label for="sizes">
+          Talla:
+        </label>
+        <select id="sizes">
+        </select>
+      </div>
     </div>
   </div>
   `;
