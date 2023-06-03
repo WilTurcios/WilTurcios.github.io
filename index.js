@@ -50,22 +50,18 @@ d.addEventListener("click", (e) => {
   }
 });
 
-if (path === "/index.html") {
-  ListOfCards({
-    element: ".products-cards",
-    products: PRODUCTS,
-    detailUrl: "/pages/detail.html",
-    limitOfCards: 6,
-  });
-}
-
-if (path === "/pages/cart.html") {
-  Cart();
-}
-
 d.addEventListener("DOMContentLoaded", (e) => {
   if (path !== "/pages/detail.html") {
     NavigationControl();
+  }
+
+  if (path === "/index.html" || path === "/") {
+    ListOfCards({
+      element: ".products-cards",
+      products: PRODUCTS,
+      detailUrl: "/pages/detail.html",
+      limitOfCards: 6,
+    });
   }
 
   if (path === "/pages/products.html") {
@@ -121,6 +117,10 @@ d.addEventListener("DOMContentLoaded", (e) => {
 
   if (path === "/pages/products.html") {
     Categories({ PRODUCTS });
+  }
+
+  if (path === "/pages/cart.html") {
+    Cart();
   }
 
   if (path === "/pages/detail.html") {
