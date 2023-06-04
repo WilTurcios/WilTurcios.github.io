@@ -213,6 +213,80 @@
   height: 1.5rem;
 }
 
+/* Footer */
+.footer {
+  width: 100vw;
+  background-color: var(--first-color);
+  color: var(--white-color);
+}
+
+.footer .container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+.footer .footer-details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 5px solid var(--white-color);
+}
+
+.footer .footer-details details {
+  min-width: max-content;
+}
+
+.footer details summary {
+  font-size: calc(1vw + 0.8rem);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.footer details div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+
+.footer details div a {
+  color: var(--white-color);
+  font-weight: bold;
+}
+
+.footer .social-media-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.footer .social-media-container h2 {
+  text-align: center;
+  font-size: calc(2vw + 0.8rem);
+}
+
+.footer .social-media-container .social-media-icons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer .social-media-container .social-media-icons a svg {
+  width: 32px;
+  height: 32px;
+  color: var(--white-color);
+}
+
 /* Formulario */
 
 .form {
@@ -354,6 +428,59 @@
   .go-back,
   .go-forward {
     display: none;
+  }
+
+  .footer {
+    width: 100vw;
+    height: auto;
+    background-color: var(--first-color);
+    color: var(--white-color);
+  }
+
+  .footer .container {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+
+  .footer .footer-details {
+    width: 60%;
+    height: 100%;
+    border: none;
+    border-right: 3px solid var(--white-color);
+  }
+
+  .footer details summary {
+    font-size: calc(1vw + 0.5rem);
+    font-weight: bold;
+  }
+
+  .footer .social-media-container {
+    width: 40%;
+  }
+
+  .footer .social-media-container h2 {
+    text-align: center;
+    font-size: calc(2vw + 0.2rem);
+  }
+
+  .footer .social-media-container .social-media-icons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .footer .social-media-container .social-media-icons a svg {
+    width: 32px;
+    height: 32px;
+    color: var(--white-color);
   }
 }
 
