@@ -27,6 +27,7 @@ const successfulPayment = async ({ target }) => {
   $main.insertAdjacentElement("beforeend", bg);
 
   closeModal("#payment-modal");
+  console.log("Success");
   await delay(5000);
   clearCart();
   target.submit();
@@ -34,6 +35,7 @@ const successfulPayment = async ({ target }) => {
 
 const submitCartForm = ({ target }) => {
   const data = Object.fromEntries(new FormData(target));
+  console.log("data");
   successfulPayment({ target });
 };
 
@@ -50,12 +52,12 @@ export function PaymentModal() {
       <h2>Formulario de Compra</h2>
       <div>
         <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Ángel" required pattern="[A-Za-z]+">
+        <input type="text" id="nombre" name="nombre" placeholder="Ángel"  pattern="[A-Za-z]+" required>
       </div>
 
       <div>
         <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido" name="apellido" placeholder="Durán" required pattern="[A-Za-z]+">
+        <input type="text" id="apellido" name="apellido" placeholder="Durán"  pattern="[A-Za-z]+" required>
       </div>
 
       <div>
@@ -65,7 +67,7 @@ export function PaymentModal() {
 
       <div>
         <label for="tarjeta">Tarjeta de Crédito:</label>
-        <input type="text" id="tarjeta" name="tarjeta" required placeholder="4000 0000 0000 0002" pattern="[0-9]{16}">
+        <input type="text" id="tarjeta" name="tarjeta"  placeholder="4000 0000 0000 0002" pattern="[0-9]{16}" required>
       </div>
 
       <div>
@@ -101,7 +103,8 @@ document.addEventListener("click", (e) => {
 });
 
 document.addEventListener("submit", (e) => {
-  if (e.target.matches("#payment-modal .form")) {
+  e.preventDefault();
+  if (e.target.matches(".form")) {
     const { target } = e;
     submitCartForm({ target });
   }

@@ -129,6 +129,7 @@ p {
   );
 }
 .main-hero-section .container {
+  min-height: 100vh;
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -268,10 +269,6 @@ p {
     flex-direction: row;
     gap: 2rem;
   }
-
-  .main-hero-section .main-hero-content .main-hero-btn-container a {
-    width: 40vw;
-  }
 }
 
 @media (min-width: 414px) {
@@ -288,7 +285,6 @@ p {
   .main-hero-section .container {
     flex-direction: row-reverse;
     align-items: center;
-    height: 90vh;
     margin-bottom: 0;
   }
 

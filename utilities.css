@@ -371,32 +371,6 @@
   transform: scale(1.1);
 }
 
-/* Flechas de navegación */
-
-.go-back,
-.go-forward {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  bottom: 5rem;
-  background-color: transparent;
-  border: none;
-}
-
-.go-back {
-  left: 5vw;
-}
-
-.go-forward {
-  right: 5vw;
-}
-.go-back svg,
-.go-forward svg {
-  width: 2.5rem;
-  height: 2.5rem;
-  fill: var(--second-color);
-}
 @media (min-width: 375px) {
 }
 @media (min-width: 480px) {
@@ -423,11 +397,6 @@
   .navbar.is-active {
     transform: translateX(0%);
     opacity: 1;
-  }
-
-  .go-back,
-  .go-forward {
-    display: none;
   }
 
   .footer {

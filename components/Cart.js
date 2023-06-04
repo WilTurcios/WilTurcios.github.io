@@ -164,6 +164,5 @@ document.addEventListener("click", (e) => {
   if (e.target.matches(".del-item") || e.target.matches(".del-item *")) {
     const id = +e.target.id;
     deleteCartItem({ id });
-    console.log(id);
   }
 });

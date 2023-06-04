@@ -15,9 +15,6 @@ export default function Detail({ target }) {
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M16 22L6 12L16 2l1.775 1.775L9.55 12l8.225 8.225L16 22Z"/></svg>
   </button>
   <div class="detail-header">
-    <div class="detail-card-title">
-    <h1>${productName}</h1>
-    </div>
     <div class="detail-card-img">
       <img src=${imgUrl} alt=${productName}>
     </div>

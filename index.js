@@ -8,7 +8,6 @@ import Menu from "./components/Menu.js";
 
 import { createElement, getElement } from "./utilities.js";
 import { CreatePaymentModal } from "./components/PaymentModal.js";
-import NavigationControl from "./components/NavigationControl.js";
 
 const d = document;
 const path = location.pathname;
@@ -51,10 +50,6 @@ d.addEventListener("click", (e) => {
 });
 
 d.addEventListener("DOMContentLoaded", (e) => {
-  if (path !== "/pages/detail.html") {
-    NavigationControl();
-  }
-
   if (path === "/index.html" || path === "/") {
     ListOfCards({
       element: ".products-cards",

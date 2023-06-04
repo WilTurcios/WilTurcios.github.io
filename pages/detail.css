@@ -12,14 +12,6 @@ body::-webkit-scrollbar {
   margin-top: 4rem;
 }
 
-.detail-card .detail-card-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  gap: 2rem;
-}
-
 .detail-card .back {
   position: absolute;
   top: 5rem;
@@ -40,19 +32,14 @@ body::-webkit-scrollbar {
   height: 2rem;
 }
 
-.detail-card .detail-card-title h1 {
-  font-size: calc(1vw + 1rem);
-  color: var(--first-color);
-  min-width: max-content;
-  margin: 0 auto;
-}
-
 .detail-card .detail-card-img {
   display: grid;
   place-content: center;
   width: 100%;
   max-width: 400px;
+  padding: 1rem;
   margin: 1rem auto;
+  mix-blend-mode: multiply;
 }
 
 .detail-card .detail-card-content {
