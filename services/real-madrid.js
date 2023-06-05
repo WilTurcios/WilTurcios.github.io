@@ -911,27 +911,6 @@ const real_madrid_terceras = [
     rating: 4.59,
   },
   {
-    id: 92,
-    productName: "Real Madrid Tercera, Temporada 2017 - 2018",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
-    imgUrl: "../assets/real_madrid/real-madrid-third-17-18.jpg",
-    sizes: ["S", "M", "L", "XL", "XXL"],
-    pricing: {
-      S: 12,
-      M: 12.5,
-      L: 14,
-      XL: 16,
-      XXL: 17,
-    },
-    stock: 20,
-    category: "Real Madrid",
-    productKeywords:
-      "Product, real madrid, blanca cr7 cristiano ronaldo fútbol futbol soccer hombre masculino",
-    generalCategory: "Futbol",
-    rating: 4.59,
-  },
-  {
     id: 93,
     productName: "Real Madrid Tercera, Temporada 2018 - 2019",
     productDescription:
