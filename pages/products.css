@@ -66,6 +66,12 @@ body::-webkit-scrollbar {
 }
 
 /* ***** CATEGORIES ***** */
+.products-aside-container {
+  position: sticky;
+  top: 4rem;
+  left: 0;
+  background-color: var(--gray-color);
+}
 .products-categories {
   display: flex;
   justify-content: flex-start;
@@ -125,7 +131,7 @@ body::-webkit-scrollbar {
   }
 
   .products-aside-container {
-    height: 100vh;
+    height: calc(100vh - 4rem);
     flex-direction: column;
     justify-content: flex-start;
     background-color: var(--first-color);
