@@ -1,15 +1,27 @@
 export function Filters({ PRODUCTS, byCategory, bySearch }) {
   let filteredProducts;
 
+  const hasIncluded =
+    bySearch &&
+    PRODUCTS.some((product) => {
+      return (
+        product.productKeywords +
+        product.productName +
+        product.productDescription
+      )
+        .toLowerCase()
+        .includes(bySearch.toLowerCase());
+    });
+
   if (!byCategory) {
     if (bySearch) {
-      return PRODUCTS.filter((product) => {
-        return product.productKeywords
-          .toLowerCase()
-          .includes(bySearch.toLowerCase());
-      }).length > 0
+      return hasIncluded
         ? (filteredProducts = PRODUCTS.filter((product) =>
-            product.productKeywords
+            (
+              product.productKeywords +
+              product.productName +
+              product.productDescription
+            )
               .toLowerCase()
               .includes(bySearch.toLowerCase())
           ))

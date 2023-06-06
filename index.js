@@ -60,12 +60,10 @@ d.addEventListener("DOMContentLoaded", (e) => {
   }
 
   if (path === "/pages/products.html") {
-    const inputSearch = d.querySelector(".products-form input");
     let inputSearchValue = null;
     let inputCategoryValue = null;
 
     const renderListOfCards = ({ category = "", search = null }) => {
-      console.log("renderListOfCards");
       return ListOfCards({
         element: ".products-cards",
         products: Filters({
@@ -95,8 +93,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
       if (e.target.matches(".products-categories button")) {
         inputSearchValue = null;
         inputCategoryValue = e.target.value;
-        console.log(inputCategoryValue);
-        // console.log({ inputSearchValue, inputCategoryValue });
+
         renderListOfCards({
           category: inputCategoryValue,
           search: inputSearchValue,
