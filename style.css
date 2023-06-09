@@ -1,121 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap");
-
-/* CUSTOM PROPERTIES */
-:root {
-  --max-width: 1400px;
-  --first-color: rgb(27, 44, 64);
-  --first-alpha-color: rgba(27, 44, 64, 0.75);
-  --second-color: rgb(244, 15, 15);
-  --second-alpha-color: rgba(244, 15, 15, 0.75);
-  --white-color: #fff;
-  --gray-light-color: #f3f3f3;
-  --gray-color: #dcdcf5;
-  --gray-dark-color: #666;
-  --black-color: #000;
-  --white-alpha-color: rgba(255, 255, 255, 0.5);
-  --black-alpha-color: rgba(0, 0, 0, 0.5);
-  --mobile-link-color: var(--first-color);
-  --link-color: #edeef0;
-  --complementary-color: #eaefff;
-  --box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.25);
-  --font: "Poppins", sans-serif;
-  --price-color: rgb(21, 102, 223);
-}
-
-/* RESET */
-html {
-  box-sizing: border-box;
-  font-family: var(--font);
-  scroll-behavior: auto;
-  font-size: 16px;
-}
-
-/* 
-  margin 
-  border 
-  padding 
-  content
-*/
-
-*,
-::after,
-::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  overflow-x: hidden;
-  background-color: var(--gray-color);
-}
-
-body::-webkit-scrollbar {
-  display: none;
-}
-
-a {
-  display: inline-block;
-  text-decoration: none;
-  color: var(--mobile-link-color);
-  transition: all 0.5s ease-out;
-}
-
-a:hover,
-a:focus {
-  opacity: 0.7;
-}
-
-svg {
-  fill: var(--second-color);
-  width: 1rem;
-}
-
-ul,
-ol {
-  list-style-type: none;
-}
-
-h1 {
-  margin: 0;
-  font-size: 2rem;
-}
-h2 {
-  margin: 0;
-  font-size: 1.5rem;
-}
-h3 {
-  margin: 0;
-  font-size: 1.25rem;
-}
-h4 {
-  margin: 0;
-  font-size: 1rem;
-}
-h5 {
-  margin: 0;
-  font-size: 0.85rem;
-}
-h6 {
-  margin: 0;
-  font-size: 0.75rem;
-}
-
-img {
-  max-width: 100%;
-}
-
-p {
-  line-height: 1.5;
-}
 /* UTILITIES */
-.container {
-  max-width: var(--max-width) !important;
-  margin: 0 auto;
-}
 
-.none {
-  display: none;
+.primary-btn {
+  display: flex;
+  justify-content: space-between !important;
+  align-items: center;
 }
 
 /* SITE STYLES */
@@ -234,6 +122,8 @@ p {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: var(--box-shadow);
 }
 
 .home-reviews-section .review .review-img img {
@@ -250,7 +140,7 @@ p {
 }
 
 .home-reviews-section .review .review-content h2 {
-  color: var(--second-alpha-color);
+  color: var(--first-alpha-color);
 }
 .home-reviews-section .review .review-content p {
   color: var(--gray-dark-color);

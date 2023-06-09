@@ -5,8 +5,7 @@ export default function Detail({ target }) {
   const $detail = getElement({ selector: target });
   const product = JSON.parse(localStorage.getItem("product"));
 
-  const [{ id, imgUrl, productName, pricing, sizes, productDescription }] =
-    product;
+  const [{ id, imgUrl, productName, pricing, productDescription }] = product;
 
   $detail.classList.add("detail-card");
 
@@ -28,7 +27,7 @@ export default function Detail({ target }) {
     </div>
     <div class="detail-card-actions">
       <button id=${id} style="--color: var(--first-color)"  class="call-to-action add-to-cart-btn" >
-        Agregar al carrito
+        Agregar al carrito talla: S
       </button>
       <div style="--color: var(--second-color);"  class="call-to-action">
         <label for="sizes">
@@ -46,13 +45,13 @@ export default function Detail({ target }) {
 const cartElements = JSON.parse(localStorage.getItem("cartElements")) || [];
 
 document.addEventListener("click", (e) => {
+  if (e.target.matches(".back") || e.target.matches(".back *")) {
+    history.back(1);
+  }
   if (e.target.matches(".add-to-cart-btn")) {
     const productID = +e.target.id;
-    const addBtn = e.target;
     const selectedProduct = PRODUCTS.find((p) => p.id === productID);
     const size = getElement({ selector: "#sizes" }).value;
-
-    addBtn.innerText = "+";
 
     const existingProductIndex = cartElements.findIndex(
       (p) => p.id === productID
@@ -69,11 +68,5 @@ document.addEventListener("click", (e) => {
     }
 
     localStorage.setItem("cartElements", JSON.stringify(cartElements));
-  }
-
-  if (!(e.target.matches(".back") || e.target.matches(".back *"))) return false;
-
-  if (e.target.matches(".back") || e.target.matches(".back *")) {
-    history.back(1);
   }
 });

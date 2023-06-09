@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../utilities.css">
+
+  <style>
+    .container {
+      display: grid;
+      place-content: center;
+      width: 100vw;
+      height: 100vh;
+      padding: 2rem;
+    }
+
+    .success-section {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 1.5rem;
+      background-color: var(--white-color);
+    }
+
+    .primary-btn {
+      min-width: max-content !important;
+    }
+
+    .primary-btn:hover {
+      background-color: var(--white-color);
+    }
+  </style>
+
+  <title>La Hinchada Form!</title>
+</head>
+
+<body>
+  <div class="container">
+    <section class="success-section">
+      <h1 style="color: var(--first-color)">
+        ¡Tu formulario ha sido enviado exitosamente!
+      </h1>
+      <p style="color: var(--gray-dark-color)">
+        El formulario que has enviado fue recibido y será respondido pronto por nuestra atención al cliente.
+      </p>
+      <strong style="color: var(--gray-dark-color)">
+        ¡Gracias por confiar en nosotros y comprar nuestros productos!
+      </strong>
+      <a class="primary-btn" href="https://lahinchadastore.netlify.app">
+        Volver a la tienda
+      </a>
+    </section>
+  </div>
+</body>
+
+</html>

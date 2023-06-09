@@ -33,7 +33,7 @@ const successfulPayment = async ({ target }) => {
   target.submit();
 };
 
-const submitCartForm = ({ target }) => {
+export const submitCartForm = ({ target }) => {
   const data = Object.fromEntries(new FormData(target));
   console.log("data");
   successfulPayment({ target });
@@ -87,25 +87,8 @@ export function CreatePaymentModal({ insertAfter }) {
   $main.insertAdjacentElement("afterend", PaymentModal());
 }
 
-const closeModal = (element) => {
+export const closeModal = (element) => {
   const paymentModal = getElement({ selector: element });
 
   paymentModal.remove();
 };
-
-document.addEventListener("click", (e) => {
-  if (
-    e.target.matches("#payment-modal .close-dialog") ||
-    e.target.matches("#payment-modal .close-dialog *")
-  ) {
-    closeModal("#payment-modal");
-  }
-});
-
-document.addEventListener("submit", (e) => {
-  e.preventDefault();
-  if (e.target.matches(".form")) {
-    const { target } = e;
-    submitCartForm({ target });
-  }
-});

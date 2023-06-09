@@ -7,13 +7,14 @@ import Detail from "./components/Detail.js";
 import Menu from "./components/Menu.js";
 
 import { createElement, getElement } from "./utilities.js";
-import { CreatePaymentModal } from "./components/PaymentModal.js";
+import { CreatePaymentModal, closeModal } from "./components/PaymentModal.js";
 
 const d = document;
 const path = location.pathname;
 
 function addOptions() {
   const $select = getElement({ selector: ".detail-card select" });
+  const addToCartBtn = getElement({ selector: ".add-to-cart-btn" });
   const fragment = document.createDocumentFragment();
 
   const [{ sizes, pricing }] = JSON.parse(localStorage.getItem("product"));
@@ -34,6 +35,7 @@ function addOptions() {
   $select.addEventListener("change", (e) => {
     const price = getElement({ selector: "#price" });
     price.innerText = `$${pricing[e.target.value]}`;
+    addToCartBtn.innerText = `Agregar al carrito talla: ${e.target.value}`;
   });
   return true;
 }
@@ -46,6 +48,23 @@ d.addEventListener("click", (e) => {
     e.target.matches(".buy-products *")
   ) {
     CreatePaymentModal({ insertAfter: ".main" });
+  }
+
+  if (
+    e.target.matches("#payment-modal .close-dialog") ||
+    e.target.matches("#payment-modal .close-dialog *")
+  ) {
+    closeModal("#payment-modal");
+  }
+});
+
+document.addEventListener("submit", (e) => {
+  if (path === "/pages/cart.html") {
+    e.preventDefault();
+    if (e.target.matches(".form")) {
+      const { target } = e;
+      submitCartForm({ target });
+    }
   }
 });
 

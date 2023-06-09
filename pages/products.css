@@ -105,6 +105,12 @@ body::-webkit-scrollbar {
 }
 /* ***** PRODUCT CARDS ***** */
 
+.primary-btn {
+  display: flex;
+  justify-content: space-between !important;
+  align-items: center;
+}
+
 /* IMPORTANTE: los estilos de esta seccion se toman de la hoja "utilities.css" */
 
 @media (min-width: 320px) {
