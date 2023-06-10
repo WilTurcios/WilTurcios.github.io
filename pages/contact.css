@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+h1 {
+  font-size: calc(3vw + 0.8rem);
+  font-weight: bold;
+  color: var(--white-color);
+}
+
 .main {
   margin: 0 auto;
   margin-top: 4rem;
@@ -26,14 +32,58 @@
   align-items: center;
 }
 
+.section:nth-child(even) {
+  background-color: var(--first-alpha-color);
+}
+.section:nth-child(odd) {
+  background-color: var(--second-alpha-color);
+}
+
+.hero-section {
+  background-image: url("../assets/contact_images/hero-contact-img.jpg");
+}
+
 .contact-text-section {
+  width: 100vw;
   display: grid;
   grid-template-columns: 1fr;
   padding: 1rem;
   gap: 1rem;
-
-  background-color: var(--second-alpha-color);
   color: var(--black-color);
+}
+.contact-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact-info-items {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.info-item {
+  height: auto;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: start;
+  box-shadow: var(--box-shadow);
+  gap: 1rem;
+  background-color: var(--white-color);
+}
+
+.info-item img {
+  width: 5rem;
+  height: 5rem;
+}
+.info-item div h3 {
+  min-width: max-content;
+  text-align: center;
+  color: #000 !important;
 }
 
 .contact-text-section article h1,
@@ -42,15 +92,13 @@
   color: var(--white-color);
 }
 
-.contact-form-section {
-  width: 100vw;
+.container.contact-form-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2.5rem;
   padding: 1rem;
-  background-color: var(--first-alpha-color);
 }
 
 .contact-form-section .contact-form-text {
@@ -98,11 +146,22 @@
 @media (min-width: 414px) {
 }
 
-@media (min-width: 480px) {
+@media (min-width: 576px) {
+  .contact-info-items {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .info-item {
+    flex-direction: column;
+  }
 }
 
 @media (min-width: 768px) {
-  .contact-form-section {
+  .contact-info-items {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .container.contact-form-section {
     flex-direction: row;
     justify-content: space-between;
     padding: 1rem;
@@ -119,10 +178,6 @@
     justify-content: center;
     align-items: center;
   }
-
-  .contact-text-section {
-    grid-template-columns: 1fr 1fr;
-  }
 }
 
 @media (min-width: 992px) {
@@ -130,6 +185,6 @@
 
 @media (min-width: 1200px) {
   .main {
-    margin-top: 0.5rem;
+    margin-top: 0;
   }
 }

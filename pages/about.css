@@ -27,41 +27,7 @@ h2 {
 }
 
 .hero-section {
-  position: relative;
-  width: 100vw;
-  height: calc(100vh - 4rem);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   background-image: url("../assets/about_images/hero-about-img.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-.hero-text {
-  position: relative;
-  z-index: 99;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 2rem;
-  text-align: center;
-  max-width: 800px;
-}
-
-.hero-text span {
-  font-size: calc(2vw + 0.5rem);
-  color: var(--second-color);
-  font-weight: bold;
-}
-.hero-text p {
-  font-size: calc(0.3vw + 0.8rem);
-  color: var(--gray-color);
-  font-weight: bold;
 }
 
 .mision-vision {
@@ -121,20 +87,13 @@ h2 {
   max-width: 50%;
 }
 
-@media screen and (min-width: 768px) {
-  .hero-section {
-    justify-content: flex-start;
-  }
-
-  .hero-text {
-    align-items: flex-start;
-    text-align: start;
-  }
-
+@media screen and (min-width: 576px) {
   .mision-vision {
-    grid-template-columns: repeat(2, minmax(300px, 600px));
+    grid-template-columns: repeat(2, minmax(250px, 600px));
   }
+}
 
+@media screen and (min-width: 768px) {
   .about-text article {
     max-width: 80%;
     flex-direction: row;
