@@ -13,12 +13,10 @@ const BARCELONA = [
       XL: 16,
       XXL: 17,
     },
-    stock: 20,
     category: "Barcelona",
     productKeywords:
       "Product barsa rojo barcita barcelona futbol soccer FCB hombre masculino",
     generalCategory: "Futbol",
-    rating: 4.59,
   },
   {
     id: 2,
@@ -45,7 +43,7 @@ const BARCELONA = [
     id: 3,
     productName: "  Barcelona tercera Temporada 2007/2008",
     productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/barcelona/fc-barcelone-third-2007-2008.webp",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {

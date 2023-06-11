@@ -1,4 +1,4 @@
-import { createElement } from "../utilities.js";
+import { createElement } from "../utilities/utilities.js";
 
 export default function Card({ imgUrl, name, price, id, detailUrl }) {
   const $card = createElement({

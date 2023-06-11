@@ -1,231 +1,234 @@
 .main {
-  margin-top: 4.5rem;
-  margin-bottom: 2rem;
-  min-height: calc(100vh - 7rem);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  margin-top: 4.5rem; /* Margen superior de 4.5rem */
+  margin-bottom: 2rem; /* Margen inferior de 2rem */
+  min-height: calc(100vh - 7rem); /* Altura mínima de 100vh - 7rem */
+  display: flex; /* Mostrar como flex */
+  flex-direction: column; /* Dirección de columna */
+  align-items: center; /* Centrar horizontalmente */
+  justify-content: space-between; /* Espacio entre elementos */
 }
 
 .cart {
-  width: 100vw;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  place-content: center;
-  gap: 1rem;
-  padding: 1rem;
+  width: 100vw; /* Ancho máximo del viewport */
+  display: grid; /* Mostrar como grid */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(160px, 1fr)
+  ); /* Columnas automáticas, tamaño mínimo de 160px y máximo de 1fr */
+  place-content: center; /* Centrar contenido */
+  gap: 1rem; /* Espacio entre elementos de 1rem */
+  padding: 1rem; /* Relleno de 1rem */
 }
 
 .cart .cartItem {
-  background-color: var(--white-color);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 20px;
-  max-width: 250px;
-  height: max-content;
-  overflow: hidden;
-  margin: 0 auto;
-  gap: 1rem;
+  background-color: var(--white-color); /* Color de fondo personalizado */
+  display: flex; /* Mostrar como flex */
+  flex-direction: column; /* Dirección de columna */
+  justify-content: space-between; /* Espacio entre elementos */
+  align-items: center; /* Centrar horizontalmente */
+  border-radius: 20px; /* Radio de borde de 20px */
+  max-width: 250px; /* Ancho máximo de 250px */
+  height: max-content; /* Altura máxima de contenido */
+  overflow: hidden; /* Ocultar desbordamiento */
+  margin: 0 auto; /* Margen automático en los lados izquierdo y derecho */
+  gap: 1rem; /* Espacio entre elementos de 1rem */
 }
 .cart .cartItem .cartItem-img {
-  max-width: 100%;
-  max-height: 100%;
-  aspect-ratio: 4/4;
-  object-position: center 0;
-  object-fit: contain;
-  flex-grow: 1;
+  max-width: 100%; /* Ancho máximo del 100% */
+  max-height: 100%; /* Altura máxima del 100% */
+  aspect-ratio: 4/4; /* Relación de aspecto de 4:4 */
+  object-position: center 0; /* Posición del objeto de la imagen */
+  object-fit: contain; /* Ajuste del objeto de la imagen */
+  flex-grow: 1; /* Crecimiento flexible de 1 */
 }
 .cart .cartItem .cartItem-text {
-  padding: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex-grow: 1;
+  padding: 0.5rem; /* Relleno de 0.5rem */
+  display: flex; /* Mostrar como flex */
+  flex-direction: column; /* Dirección de columna */
+  align-items: center; /* Centrar horizontalmente */
+  justify-content: center; /* Centrar verticalmente */
+  flex-grow: 1; /* Crecimiento flexible de 1 */
 }
 
 .cart .cartItem .del-item {
-  width: 4rem;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 10px;
-  background-color: var(--second-color);
+  width: 4rem; /* Ancho de 4rem */
+  padding: 0.5rem 1rem; /* Relleno de 0.5rem arriba y abajo, 1rem izquierda y derecha */
+  border: none; /* Sin borde */
+  border-radius: 10px; /* Radio de borde de 10px */
+  background-color: var(--second-color); /* Color de fondo personalizado */
 }
 
 .cart .cartItem .cartItem-text span {
-  font-size: calc(1vw + 0.5rem);
-  color: var(--first-color);
-  font-weight: bold;
+  font-size: calc(1vw + 0.5rem); /* Tamaño de fuente calculado */
+  color: var(--first-color); /* Color de texto personalizado */
+  font-weight: bold; /* Negrita */
 }
 .cart .cartItem .cartItem-text small {
-  font-size: 10px;
-  color: var(--gray-dark-color);
+  font-size: 10px; /* Tamaño de fuente de 10px */
+  color: var(--gray-dark-color); /* Color de texto personalizado */
 }
 
 .cart .cartItem .cartItem-img img {
-  height: 100%;
-  object-fit: contain;
-  object-position: center center;
+  height: 100%; /* Altura del 100% */
+  object-fit: contain; /* Ajuste del objeto de la imagen */
+  object-position: center center; /* Posición del objeto de la imagen */
 }
 
 .cart-actions {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  width: 100vw;
-  padding: 0 1rem;
+  display: flex; /* Mostrar como flex */
+  justify-content: space-between; /* Espacio entre elementos */
+  align-items: center; /* Centrar horizontalmente */
+  flex-direction: column; /* Dirección de columna */
+  width: 100vw; /* Ancho máximo del viewport */
+  padding: 0 1rem; /* Relleno de 0 arriba y abajo, 1rem izquierda y derecha */
 }
 
 .cart-actions div {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  text-align: center;
+  display: flex; /* Mostrar como flex */
+  flex-direction: column; /* Dirección de columna */
+  width: 100%; /* Ancho del 100% */
+  text-align: center; /* Alineación de texto centrada */
 }
 
 .cart-actions button {
-  width: 100%;
-  padding: 0.5rem 1rem;
-  border-radius: 10px;
-  border: none;
-  background-color: var(--first-color);
-  color: var(--white-color);
+  width: 100%; /* Ancho del 100% */
+  padding: 0.5rem 1rem; /* Relleno de 0.5rem arriba y abajo, 1rem izquierda y derecha */
+  border-radius: 10px; /* Radio de borde de 10px */
+  border: none; /* Sin borde */
+  background-color: var(--first-color); /* Color de fondo personalizado */
+  color: var(--white-color); /* Color de texto personalizado */
 }
 .cart-actions button:first-of-type {
-  background-color: var(--second-color);
+  background-color: var(--second-color); /* Color de fondo personalizado */
 }
 
 .cart-actions .clear-cart {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
+  display: flex; /* Mostrar como flex */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  gap: 0.5rem; /* Espacio entre elementos de 0.5rem */
 }
-/* CUANDO EL CARRITO ESTÁ VACÍO */
 
 .empty-cart {
-  width: 100vw;
-  padding: 1.5rem;
-  text-align: center;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: var(--gray-dark-color);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
+  width: 100vw; /* Ancho máximo del viewport */
+  padding: 1.5rem; /* Relleno de 1.5rem */
+  text-align: center; /* Alineación de texto centrada */
+  font-size: 1.2rem; /* Tamaño de fuente de 1.2rem */
+  font-weight: bold; /* Negrita */
+  color: var(--gray-dark-color); /* Color de texto personalizado */
+  display: flex; /* Mostrar como flex */
+  flex-direction: column; /* Dirección de columna */
+  justify-content: center; /* Centrar verticalmente */
+  align-items: center; /* Centrar horizontalmente */
+  gap: 2rem; /* Espacio entre elementos de 2rem */
 }
 
-/* CUANDO SE COMPRAN LOS PRODUCTOS DEL CARRITO */
-
 .success-modal {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  width: 80vw;
-  height: max-content;
-  padding: 1.25rem;
-  top: 50%;
-  left: 50%;
-  border-radius: 10px;
-  transform: translate(-50%, -50%);
-  gap: 1rem;
-  background-color: var(--white-alpha-color);
-  backdrop-filter: blur(20px);
+  display: flex; /* Mostrar como flex */
+  flex-direction: column; /* Dirección de columna */
+  justify-content: center; /* Centrar verticalmente */
+  align-items: center; /* Centrar horizontalmente */
+  position: fixed; /* Posición fija */
+  width: 80vw; /* Ancho del 80% del viewport */
+  height: max-content; /* Altura máxima de contenido */
+  padding: 1.25rem; /* Relleno de 1.25rem */
+  top: 50%; /* Ubicación superior del 50% */
+  left: 50%; /* Ubicación izquierda del 50% */
+  border-radius: 10px; /* Radio de borde de 10px */
+  transform: translate(-50%, -50%); /* Traducción de -50% en ambos ejes */
+  gap: 1rem; /* Espacio entre elementos de 1rem */
+  background-color: var(--white-alpha-color); /* Color de fondo personalizado */
+  backdrop-filter: blur(20px); /* Filtro de fondo desenfocado */
 }
 
 .success-modal-bg {
-  position: absolute;
-  inset: 0;
-  background-color: var(--black-alpha-color);
-  z-index: -10;
+  position: absolute; /* Posición absoluta */
+  inset: 0; /* Ajuste de inserción en todos los lados */
+  background-color: var(--black-alpha-color); /* Color de fondo personalizado */
+  z-index: -10; /* Índice z -10 */
 }
 .success-modal h1 {
-  color: var(--first-color);
-  font-size: 2rem;
-  font-weight: bold;
+  color: var(--first-color); /* Color de texto personalizado */
+  font-size: 2rem; /* Tamaño de fuente de 2rem */
+  font-weight: bold; /* Negrita */
 }
 .success-modal span {
-  color: var(--second-color);
-  font-size: 1.25rem;
-  font-weight: 400;
+  color: var(--second-color); /* Color de texto personalizado */
+  font-size: 1.25rem; /* Tamaño de fuente de 1.25rem */
+  font-weight: 400; /* Peso de fuente de 400 */
 }
 .success-modal p {
-  color: var(--gray-dark-color);
-  font-size: 0.8rem;
+  color: var(--gray-dark-color); /* Color de texto personalizado */
+  font-size: 0.8rem; /* Tamaño de fuente de 0.8rem */
 }
 
-/* MODAL DE COMPRA */
-
 .form {
-  width: 90vw;
-  gap: 0.5rem;
-  z-index: 9999;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 90vw; /* Ancho del 90% del viewport */
+  gap: 0.5rem; /* Espacio entre elementos de 0.5rem */
+  z-index: 9999; /* Índice z 9999 */
+  position: fixed; /* Posición fija */
+  top: 50%; /* Ubicación superior del 50% */
+  left: 50%; /* Ubicación izquierda del 50% */
+  transform: translate(-50%, -50%); /* Traducción de -50% en ambos ejes */
 }
 
 .form button {
-  width: 100%;
+  width: 100%; /* Ancho del 100% */
 }
 
 @media (min-width: 320px) {
+  /* Reglas CSS específicas para pantallas con un ancho mínimo de 320px */
 }
 
 @media (min-width: 375px) {
+  /* Reglas CSS específicas para pantallas con un ancho mínimo de 375px */
 }
 
 @media (min-width: 414px) {
+  /* Reglas CSS específicas para pantallas con un ancho mínimo de 414px */
   .form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
+    display: grid; /* Mostrar como grid */
+    grid-template-columns: 1fr 1fr; /* Columnas de tamaño igual */
+    justify-items: center; /* Centrar horizontalmente */
   }
 
   .form h2 {
-    grid-column: span 2;
+    grid-column: span 2; /* Ocupar 2 columnas */
   }
 
   .form button {
-    width: 10rem;
+    width: 10rem; /* Ancho de 10rem */
   }
   .form > input {
-    grid-column: span 2;
+    grid-column: span 2; /* Ocupar 2 columnas */
   }
 }
 
+/* Estilos para pantallas con un ancho mínimo de 480px */
 @media (min-width: 480px) {
+  /* Cambiar la dirección de la flexbox a fila en .cart-actions */
   .cart-actions {
     flex-direction: row;
   }
+
+  /* Establecer un ancho mínimo de contenido para los botones en .cart-actions */
   .cart-actions button {
     width: 0;
     min-width: max-content;
   }
-  .cart-actions {
-    flex-direction: row;
-  }
 }
 
+/* Estilos para pantallas con un ancho mínimo de 768px */
 @media (min-width: 768px) {
+  /* Establecer un ancho de 750px para .form */
   .form {
     width: 750px;
   }
 }
 
-@media (min-width: 992px) {
-}
-
+/* Estilos para pantallas con un ancho mínimo de 1200px */
 @media (min-width: 1200px) {
+  /* Eliminar el margen superior de .main */
   .main {
     margin-top: 0;
   }

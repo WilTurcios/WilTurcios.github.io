@@ -1,190 +1,192 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-h1 {
-  font-size: calc(3vw + 0.8rem);
-  font-weight: bold;
-  color: var(--white-color);
-}
-
+/* Estilos generales para .main */
 .main {
-  margin: 0 auto;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin: 0 auto; /* Centra el elemento horizontalmente en su contenedor */
+  margin-top: 4rem; /* Margen superior de 4 rem */
+  margin-bottom: 4rem; /* Margen inferior de 4 rem */
 }
 
+/* Estilos para .main .container */
 .main .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
+  display: flex; /* Elemento de tipo flex */
+  flex-direction: column; /* Dirección de columna para los elementos secundarios */
+  justify-content: center; /* Centra verticalmente los elementos secundarios */
+  align-items: center; /* Centra horizontalmente los elementos secundarios */
+  gap: 1.5rem; /* Espacio de 1.5 rem entre los elementos secundarios */
 }
 
+/* Estilos para las secciones */
 .section {
-  width: 100vw;
-  min-height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100vw; /* Ancho de la sección igual al ancho de la ventana */
+  min-height: 80vh; /* Altura mínima de la sección del 80% del alto de la ventana */
+  display: flex; /* Elemento de tipo flex */
+  justify-content: center; /* Centra horizontalmente los elementos secundarios */
+  align-items: center; /* Centra verticalmente los elementos secundarios */
 }
 
+/* Estilos alternativos para las secciones pares e impares */
 .section:nth-child(even) {
-  background-color: var(--first-alpha-color);
+  background-color: var(
+    --first-alpha-color
+  ); /* Color de fondo para las secciones pares */
 }
 .section:nth-child(odd) {
-  background-color: var(--second-alpha-color);
+  background-color: var(
+    --second-alpha-color
+  ); /* Color de fondo para las secciones impares */
 }
 
+/* Estilos para .hero-section */
 .hero-section {
-  background-image: url("../assets/contact_images/hero-contact-img.jpg");
+  background-image: url("../assets/contact_images/hero-contact-img.jpg"); /* Imagen de fondo para la sección de héroe */
 }
 
+/* Estilos para .contact-text-section */
 .contact-text-section {
-  width: 100vw;
-  display: grid;
-  grid-template-columns: 1fr;
-  padding: 1rem;
-  gap: 1rem;
-  color: var(--black-color);
-}
-.contact-info-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.contact-info-items {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
+  width: 100vw; /* Ancho de la sección igual al ancho de la ventana */
+  display: grid; /* Elemento de tipo grid */
+  grid-template-columns: 1fr; /* Una sola columna en el grid */
+  padding: 1rem; /* Relleno de 1 rem */
+  gap: 1rem; /* Espacio de 1 rem entre los elementos secundarios */
+  color: var(--black-color); /* Color de texto */
 }
 
+/* Estilos para .contact-info-container */
+.contact-info-container {
+  display: flex; /* Elemento de tipo flex */
+  flex-direction: column; /* Dirección de columna para los elementos secundarios */
+  align-items: center; /* Centra horizontalmente los elementos secundarios */
+  justify-content: center; /* Centra verticalmente los elementos secundarios */
+}
+
+/* Estilos para .contact-info-items */
+.contact-info-items {
+  display: grid; /* Elemento de tipo grid */
+  grid-template-columns: 1fr; /* Una sola columna en el grid */
+  gap: 1.5rem; /* Espacio de 1.5 rem entre los elementos secundarios */
+}
+
+/* Estilos para .info-item */
 .info-item {
-  height: auto;
-  padding: 1rem;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  text-align: start;
-  box-shadow: var(--box-shadow);
-  gap: 1rem;
-  background-color: var(--white-color);
+  height: auto; /* Altura automática */
+  padding: 1rem; /* Relleno de 1 rem */
+  border-radius: 10px; /* Borde redondeado de 10 px */
+  display: flex; /* Elemento de tipo flex */
+  justify-content: space-evenly; /* Espacio igual entre los elementos secundarios */
+  align-items: center; /* Centra horizontalmente los elementos secundarios */
+  text-align: start; /* Alineación del texto a la izquierda */
+  box-shadow: var(--box-shadow); /* Sombra del elemento */
+  gap: 1rem; /* Espacio de 1 rem entre los elementos secundarios */
+  background-color: var(--white-color); /* Color de fondo del elemento */
 }
 
 .info-item img {
-  width: 5rem;
-  height: 5rem;
-}
-.info-item div h3 {
-  min-width: max-content;
-  text-align: center;
-  color: #000 !important;
+  width: 5rem; /* Ancho de la imagen de 5 rem */
+  height: 5rem; /* Altura de la imagen de 5 rem */
 }
 
-.contact-text-section article h1,
+.info-item div h3 {
+  min-width: max-content; /* Ancho mínimo igual al contenido máximo */
+  text-align: center; /* Alineación del texto al centro */
+  color: #000 !important; /* Color de texto (importante) */
+}
+
+/* Estilos para los elementos de texto en .contact-text-section */
 .contact-text-section article h3,
 .contact-text-section article strong {
-  color: var(--white-color);
+  color: var(--white-color); /* Color de texto */
 }
 
+/* Estilos para .container.contact-form-section */
 .container.contact-form-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2.5rem;
-  padding: 1rem;
+  display: flex; /* Elemento de tipo flex */
+  flex-direction: column; /* Dirección de columna para los elementos secundarios */
+  align-items: center; /* Centra horizontalmente los elementos secundarios */
+  justify-content: center; /* Centra verticalmente los elementos secundarios */
+  gap: 2.5rem; /* Espacio de 2.5 rem entre los elementos secundarios */
+  padding: 1rem; /* Relleno de 1 rem */
 }
 
+/* Estilos para .contact-form-text */
 .contact-form-section .contact-form-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  gap: 1.5rem;
+  display: flex; /* Elemento de tipo flex */
+  justify-content: center; /* Centra horizontalmente los elementos secundarios */
+  align-items: center; /* Centra verticalmente los elementos secundarios */
+  flex-direction: column; /* Dirección de columna para los elementos secundarios */
+  text-align: center; /* Alineación del texto al centro */
+  gap: 1.5rem; /* Espacio de 1.5 rem entre los elementos secundarios */
 }
+
 .contact-form-section .contact-form-text h2 {
-  font-size: 2rem;
-  font-weight: 900;
-  color: var(--white-color);
+  font-size: 2rem; /* Tamaño de fuente de 2 rem */
+  font-weight: 900; /* Peso de fuente de 900 */
+  color: var(--white-color); /* Color de texto */
 }
+
 .contact-form-section .contact-form-text p {
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: var(--white-alpha-color);
+  font-size: 1.2rem; /* Tamaño de fuente de 1.2 rem */
+  font-weight: 500; /* Peso de fuente de 500 */
+  color: var(--white-alpha-color); /* Color de texto */
 }
 
-.form div:last-of-type {
-  grid-column: span 2;
-}
-
-@media (min-width: 320px) {
-}
-
+/* Estilos para .form dentro de ciertos tamaños de pantalla */
 @media (min-width: 375px) {
   .form {
-    max-width: 500px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
+    max-width: 500px; /* Ancho máximo de 500 px */
+    display: grid; /* Elemento de tipo grid */
+    grid-template-columns: 1fr 1fr; /* Dos columnas en el grid */
+    justify-items: center; /* Centra horizontalmente los elementos secundarios */
   }
 
   .form h2 {
-    grid-column: span 2;
+    grid-column: span 2; /* Ocupa el ancho de las dos columnas en el grid */
   }
   .form > input {
-    grid-column: span 2;
+    grid-column: span 2; /* Ocupa el ancho de las dos columnas en el grid */
   }
-}
-
-@media (min-width: 414px) {
 }
 
 @media (min-width: 576px) {
+  /* Estilos para .contact-info-items en pantallas con ancho mínimo de 576px */
   .contact-info-items {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* Dos columnas en el grid */
   }
 
+  /* Estilos para .info-item en pantallas con ancho mínimo de 576px */
   .info-item {
-    flex-direction: column;
+    flex-direction: column; /* Dirección de columna para los elementos secundarios */
   }
 }
 
 @media (min-width: 768px) {
+  /* Estilos para .contact-info-items en pantallas con ancho mínimo de 768px */
   .contact-info-items {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr; /* Tres columnas en el grid */
   }
 
+  /* Estilos para .container.contact-form-section en pantallas con ancho mínimo de 768px */
   .container.contact-form-section {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 1rem;
+    flex-direction: row; /* Dirección de fila para los elementos secundarios */
+    justify-content: space-between; /* Espacio distribuido entre los elementos secundarios */
+    padding: 1rem; /* Relleno de 1 rem */
   }
 
+  /* Estilos para .contact-form-text en pantallas con ancho mínimo de 768px */
   .contact-form-section .contact-form-text {
-    width: 40vw;
-    align-items: flex-start;
-    text-align: start;
+    width: 40vw; /* Ancho del 40% del ancho de la ventana */
+    align-items: flex-start; /* Alineación de los elementos secundarios al inicio */
+    text-align: start; /* Alineación del texto a la izquierda */
   }
   .contact-form-container {
-    width: 50vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 50vw; /* Ancho del 50% del ancho de la ventana */
+    display: flex; /* Elemento de tipo flex */
+    justify-content: center; /* Centra horizontalmente los elementos secundarios */
+    align-items: center; /* Centra verticalmente los elementos secundarios */
   }
-}
-
-@media (min-width: 992px) {
 }
 
 @media (min-width: 1200px) {
+  /* Estilos para .main en pantallas con ancho mínimo de 1200px */
   .main {
-    margin-top: 0;
+    margin-top: 0; /* Margen superior de 0 */
   }
 }

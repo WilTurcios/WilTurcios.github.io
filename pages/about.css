@@ -1,117 +1,125 @@
 .main {
-  background-color: #fff;
+  background-color: #fff; /* Color de fondo blanco */
 }
 
-h1 {
-  font-size: calc(3vw + 0.8rem);
-  font-weight: bold;
-  color: var(--white-color);
-}
 h2 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: var(--first-color);
+  font-size: 1.5rem; /* Tamaño de fuente de 1.5rem */
+  font-weight: bold; /* Peso de fuente en negrita */
+  color: var(--first-color); /* Color personalizado */
 }
 
 .main {
-  margin-top: 4rem;
-  display: grid;
-  place-content: center;
+  margin-top: 4rem; /* Margen superior de 4rem */
+  display: grid; /* Mostrar como grid */
+  place-content: center; /* Centrar contenido */
 }
 
 .bg {
-  position: absolute;
-  inset: 0;
-  background-color: var(--black-alpha-color);
-  z-index: 1;
+  position: absolute; /* Posición absoluta */
+  inset: 0; /* Ancho y alto de 0 en todos los lados */
+  background-color: var(--black-alpha-color); /* Color de fondo personalizado */
+  z-index: 1; /* Índice de apilamiento de 1 */
 }
 
 .hero-section {
-  background-image: url("../assets/about_images/hero-about-img.jpg");
+  background-image: url("../assets/about_images/hero-about-img.jpg"); /* Imagen de fondo */
 }
 
 .mision-vision {
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  place-content: repeat(auto-fit, minmax(1fr, 600px));
-  gap: 2rem;
-  padding: 2rem;
+  margin: 0 auto; /* Margen automático en los lados izquierdo y derecho */
+  display: grid; /* Mostrar como grid */
+  grid-template-columns: 1fr; /* Columna única */
+  place-content: repeat(
+    auto-fit,
+    minmax(1fr, 600px)
+  ); /* Ajuste automático y tamaño mínimo de 1fr y máximo de 600px */
+  gap: 2rem; /* Espacio entre elementos de 2rem */
+  padding: 2rem; /* Relleno de 2rem */
 }
 
 .mision-vision article {
-  max-width: 550px;
-  padding: 1rem;
-  border-radius: 15px;
-  box-shadow: var(--box-shadow);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  background-color: var(--white-color);
+  max-width: 550px; /* Ancho máximo de 550px */
+  padding: 1rem; /* Relleno de 1rem */
+  border-radius: 15px; /* Radio de borde de 15px */
+  box-shadow: var(--box-shadow); /* Sombra personalizada */
+  display: flex; /* Mostrar como flex */
+  flex-direction: column; /* Dirección de columna */
+  justify-content: center; /* Centrar verticalmente */
+  align-items: center; /* Centrar horizontalmente */
+  gap: 1rem; /* Espacio entre elementos de 1rem */
+  background-color: var(--white-color); /* Color de fondo personalizado */
 }
 
 .mision-vision article img {
-  margin: 0 auto;
-  max-width: 300px;
-  object-fit: cover;
-  object-position: center;
+  margin: 0 auto; /* Margen automático en los lados izquierdo y derecho */
+  max-width: 300px; /* Ancho máximo de 300px */
+  object-fit: cover; /* Ajuste del objeto de la imagen */
+  object-position: center; /* Posición del objeto de la imagen */
 }
 
 .about-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
-  padding: 2rem;
+  display: flex; /* Mostrar como flex */
+  flex-direction: column; /* Dirección de columna */
+  justify-content: center; /* Centrar verticalmente */
+  align-items: center; /* Centrar horizontalmente */
+  gap: 1.5rem; /* Espacio entre elementos de 1.5rem */
+  padding: 2rem; /* Relleno de 2rem */
 }
 
 .about-text-title {
-  margin: 0 auto;
-  font-size: calc(3vw + 0.8rem);
-  color: var(--first-color);
-  text-align: center;
+  margin: 0 auto; /* Margen automático en los lados izquierdo y derecho */
+  font-size: calc(3vw + 0.8rem); /* Tamaño de fuente calculado */
+  color: var(--first-color); /* Color de texto personalizado */
+  text-align: center; /* Alinear texto al centro */
 }
 
 .about-text article {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 1rem;
-  align-items: center;
+  display: flex; /* Mostrar como flex */
+  justify-content: center; /* Centrar horizontalmente */
+  flex-direction: column; /* Dirección de columna */
+  gap: 1rem; /* Espacio entre elementos de 1rem */
+  align-items: center; /* Centrar verticalmente */
 }
 
 .about-text article img {
-  max-width: 50%;
+  max-width: 50%; /* Ancho máximo de 50% */
 }
 
 @media screen and (min-width: 576px) {
+  /* Estilos para pantallas con un ancho mínimo de 576px */
+
   .mision-vision {
-    grid-template-columns: repeat(2, minmax(250px, 600px));
+    grid-template-columns: repeat(
+      2,
+      minmax(250px, 600px)
+    ); /* Columnas repetidas, tamaño mínimo de 250px y máximo de 600px */
   }
 }
 
 @media screen and (min-width: 768px) {
+  /* Estilos para pantallas con un ancho mínimo de 768px */
+
   .about-text article {
-    max-width: 80%;
-    flex-direction: row;
+    max-width: 80%; /* Ancho máximo del 80% */
+    flex-direction: row; /* Dirección de fila */
   }
 
   .about-text article img {
-    max-width: 35%;
+    max-width: 35%; /* Ancho máximo del 35% */
   }
 
   .about-text article:nth-of-type(odd) img {
-    order: 1;
+    order: 1; /* Cambiar el orden del artículo impar */
   }
   .about-text article:nth-of-type(even) img {
-    order: -1;
+    order: -1; /* Cambiar el orden del artículo par */
   }
 }
+
 @media screen and (min-width: 1200px) {
+  /* Estilos para pantallas con un ancho mínimo de 1200px */
+
   .main {
-    margin-top: 0;
+    margin-top: 0; /* Margen superior de 0 */
   }
 }

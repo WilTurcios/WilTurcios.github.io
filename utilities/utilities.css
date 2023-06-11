@@ -1,0 +1,782 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap");
+
+/* CUSTOM PROPERTIES */
+:root {
+  --max-width: 1400px;
+  --first-color: rgb(27, 44, 64);
+  --first-alpha-color: rgba(27, 44, 64, 0.75);
+  --second-color: rgb(244, 15, 15);
+  --second-alpha-color: rgba(244, 15, 15, 0.75);
+  --white-color: #fff;
+  --gray-light-color: #f3f3f3;
+  --gray-color: #dcdcf5;
+  --gray-dark-color: #666;
+  --black-color: #000;
+  --white-alpha-color: rgba(255, 255, 255, 0.5);
+  --black-alpha-color: rgba(0, 0, 0, 0.5);
+  --mobile-link-color: var(--first-color);
+  --link-color: #edeef0;
+  --complementary-color: #eaefff;
+  --box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.25);
+  --font: "Poppins", sans-serif;
+  --price-color: rgb(21, 102, 223);
+}
+
+/* RESET */
+/* Estilos generales para el documento HTML */
+
+/* Configuración del modelo de caja */
+html {
+  box-sizing: border-box; /* Usar modelo de caja de borde */
+  font-family: var(--font); /* Fuente de texto personalizada */
+  scroll-behavior: auto; /* Comportamiento de desplazamiento automático */
+  font-size: 16px; /* Tamaño de fuente base de 16px */
+}
+
+/* Estilos de reinicio */
+*,
+::after,
+::before {
+  margin: 0; /* Margen cero */
+  padding: 0; /* Relleno cero */
+  box-sizing: border-box; /* Usar modelo de caja de borde */
+}
+
+/* Estilos para el cuerpo del documento */
+body {
+  overflow-x: hidden; /* Ocultar desplazamiento horizontal */
+  background-color: var(--gray-color); /* Color de fondo personalizado */
+}
+
+/* Estilos para la barra de desplazamiento en WebKit */
+body::-webkit-scrollbar {
+  display: none; /* Ocultar barra de desplazamiento */
+}
+
+/* Estilos para enlaces */
+a {
+  display: inline-block; /* Mostrar como bloque en línea */
+  text-decoration: none; /* Sin decoración de texto */
+  color: var(--mobile-link-color); /* Color de enlace personalizado */
+  transition: all 0.5s ease-out; /* Transición suave */
+}
+
+/* Estilos para enlaces al pasar el cursor o enfocar */
+a:hover,
+a:focus {
+  opacity: 0.7; /* Opacidad reducida */
+}
+
+/* Estilos para iconos SVG */
+svg {
+  fill: var(--second-color); /* Relleno de color personalizado */
+  width: 1rem; /* Ancho de 1rem */
+}
+
+/* Estilos para listas no ordenadas y ordenadas */
+ul,
+ol {
+  list-style-type: none; /* Tipo de estilo de lista: ninguno */
+}
+
+/* Estilos para títulos */
+h2 {
+  margin: 0; /* Margen cero */
+  font-size: 1.5rem; /* Tamaño de fuente de 1.5rem */
+}
+
+h3 {
+  margin: 0; /* Margen cero */
+  font-size: 1.25rem; /* Tamaño de fuente de 1.25rem */
+}
+
+h4 {
+  margin: 0; /* Margen cero */
+  font-size: 1rem; /* Tamaño de fuente de 1rem */
+}
+
+h5 {
+  margin: 0; /* Margen cero */
+  font-size: 0.85rem; /* Tamaño de fuente de 0.85rem */
+}
+
+h6 {
+  margin: 0; /* Margen cero */
+  font-size: 0.75rem; /* Tamaño de fuente de 0.75rem */
+}
+
+/* Estilos para imágenes */
+img {
+  max-width: 100%; /* Ancho máximo del 100% */
+}
+
+/* Estilos para párrafos */
+p {
+  line-height: 1.5; /* Altura de línea de 1.5 */
+}
+
+/* ***** UTILITY CLASSES */
+.h1 {
+  font-size: calc(5vw + 1rem);
+  color: white;
+  line-height: 1;
+}
+
+.container {
+  max-width: var(--max-width) !important;
+  margin: 0 auto;
+}
+
+.none {
+  display: none;
+}
+
+/* ***** HERO SECTION ***** */
+
+/* Estilos para la sección de héroe */
+.hero-section {
+  position: relative; /* Posición relativa */
+  width: 100vw; /* Ancho de la ventana */
+  height: calc(100vh - 4rem); /* Altura de la ventana menos 4 rem */
+  display: flex; /* Mostrar como flexbox */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+
+  background-image: url("../assets/about_images/hero-about-img.jpg"); /* Imagen de fondo */
+  background-size: cover; /* Tamaño de la imagen de fondo: cubrir */
+  background-position: center; /* Posición de la imagen de fondo: centrada */
+  background-attachment: fixed; /* Adjuntar imagen de fondo: fija */
+}
+
+/* Estilos para el texto del héroe */
+.hero-text {
+  position: relative; /* Posición relativa */
+  z-index: 99; /* Índice z para superposición */
+  display: flex; /* Mostrar como flexbox */
+  flex-direction: column; /* Dirección de la columna */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  gap: 0.5rem; /* Espacio entre elementos hijo */
+  padding: 2rem; /* Relleno interno */
+  text-align: center; /* Alinear el texto al centro */
+  max-width: 800px; /* Ancho máximo */
+}
+
+/* Estilos para el elemento span dentro del texto del héroe */
+.hero-text span {
+  font-size: calc(2vw + 0.5rem); /* Tamaño de fuente calculado */
+  color: var(--second-color); /* Color de texto personalizado */
+  font-weight: bold; /* Peso de fuente en negrita */
+}
+
+/* Estilos para el elemento p dentro del texto del héroe */
+.hero-text p {
+  font-size: calc(0.3vw + 0.8rem); /* Tamaño de fuente calculado */
+  color: var(--gray-color); /* Color de texto personalizado */
+  font-weight: bold; /* Peso de fuente en negrita */
+}
+
+/* ***** BUTTONS ***** */
+
+/* Estilos para los botones primarios y llamadas a la acción */
+.primary-btn,
+.call-to-action {
+  max-width: max-content; /* Ancho máximo basado en el contenido */
+  height: max-content; /* Altura máxima basada en el contenido */
+  color: white; /* Color de texto */
+  background-color: var(--first-color); /* Color de fondo personalizado */
+  border: none; /* Sin borde */
+  padding: 1rem 2rem; /* Relleno interno */
+  font-weight: bold; /* Peso de fuente en negrita */
+  border-radius: 10px; /* Radio de borde */
+  cursor: pointer; /* Cambiar el cursor a un puntero */
+  text-align: center; /* Alinear el texto al centro */
+  transition: all 0.2s ease-in-out; /* Transición animada para todas las propiedades */
+}
+
+/* Estilos específicos para las llamadas a la acción */
+.call-to-action {
+  background-color: var(--color); /* Color de fondo personalizado */
+  box-shadow: var(--box-shadow); /* Sombra personalizada */
+}
+
+/* Estilos para los botones primarios y las llamadas a la acción al pasar el cursor */
+.primary-btn:hover,
+.call-to-action:hover {
+  background-color: transparent; /* Fondo transparente */
+  border: 1px solid var(--first-color); /* Borde de 1 píxel sólido */
+  border-color: var(--color); /* Color del borde personalizado */
+  color: var(--first-color); /* Color de texto personalizado */
+  color: var(--color); /* Color de texto personalizado */
+}
+
+/* Estilos para el ícono SVG dentro de los botones primarios al pasar el cursor */
+.primary-btn:hover svg {
+  fill: var(
+    --first-color
+  ) !important; /* Color de relleno personalizado para el ícono SVG */
+}
+
+/* Estilos para los botones primarios al pasar el cursor */
+.primary-btn:hover {
+  animation: btn-width-animation 0.3s linear forwards; /* Animación de ancho del botón */
+}
+
+/* Animación de ancho del botón */
+@keyframes btn-width-animation {
+  0% {
+    min-width: max-content; /* Ancho mínimo basado en el contenido */
+  }
+  40% {
+    min-width: 70%; /* Ancho mínimo del 70% */
+  }
+  50% {
+    min-width: 75%; /* Ancho mínimo del 75% */
+  }
+  60% {
+    min-width: 80%; /* Ancho mínimo del 80% */
+  }
+  70% {
+    min-width: 85%; /* Ancho mínimo del 85% */
+  }
+  80% {
+    min-width: 90%; /* Ancho mínimo del 90% */
+  }
+  90% {
+    min-width: 95%; /* Ancho mínimo del 95% */
+  }
+  100% {
+    min-width: 100%; /* Ancho mínimo del 100% */
+  }
+}
+
+/* ***** COMPONENTS ***** */
+
+/* HEADER */
+/* Estilos para el encabezado */
+.header {
+  background-color: var(--first-color); /* Color de fondo personalizado */
+  width: 100vw; /* Ancho igual al ancho de la ventana del navegador */
+  height: 4rem; /* Altura fija de 4 rem */
+  position: fixed; /* Posición fija */
+  top: 0; /* Colocado en la parte superior */
+  left: 0; /* Colocado en la parte izquierda */
+  display: flex; /* Elemento contenedor flexible */
+  align-items: center; /* Centrar verticalmente los elementos */
+  justify-content: center; /* Centrar horizontalmente los elementos */
+  z-index: 9999; /* Capa z para superponer sobre otros elementos */
+}
+
+/* Estilos para el contenedor dentro del encabezado */
+.header .container {
+  width: 100%; /* Ancho al 100% del contenedor padre */
+  display: flex; /* Elemento contenedor flexible */
+  justify-content: space-between; /* Distribución espaciada horizontalmente */
+  align-items: center; /* Centrar verticalmente los elementos */
+  margin: 0 1.5rem; /* Margen horizontal */
+}
+
+/* Estilos para el logo dentro del encabezado */
+.header .logo {
+  width: 4rem; /* Ancho de 4 rem */
+  height: 4rem; /* Altura de 4 rem */
+}
+
+/* Estilos para el botón de carrito dentro del encabezado */
+.header .cart-btn {
+  width: 3rem; /* Ancho de 3 rem */
+  height: 3rem; /* Altura de 3 rem */
+  background-color: transparent; /* Color de fondo transparente */
+  border: none; /* Sin borde */
+  cursor: pointer; /* Cambiar el cursor a un puntero */
+  display: flex; /* Elemento contenedor flexible */
+  align-items: center; /* Centrar verticalmente los elementos */
+  justify-content: center; /* Centrar horizontalmente los elementos */
+}
+
+/* Estilos para el botón de carrito al pasar el cursor o enfocarse */
+.header .cart-btn:hover,
+.header .cart-btn:focus {
+  transform: scale(1.1); /* Escalar al 110% */
+  opacity: 1; /* Opacidad completa */
+}
+
+/* Estilos para el ícono SVG dentro del botón de carrito del encabezado */
+.header .cart-btn svg {
+  width: 2rem; /* Ancho de 2 rem */
+}
+
+/* Estilos para la barra de navegación dentro del encabezado */
+.header .navbar {
+  position: absolute; /* Posición absoluta */
+  top: 4rem; /* Espaciado desde la parte superior del encabezado */
+  left: 0; /* Colocado en la parte izquierda */
+  opacity: 0; /* Opacidad inicial de 0 */
+  transform: translateY(200%); /* Desplazamiento vertical hacia abajo */
+  width: 100%; /* Ancho al 100% del contenedor */
+  height: max-content; /* Altura máxima basada en el contenido */
+  transition: all 0.5s ease-in-out; /* Transición animada para todas las propiedades */
+  box-shadow: var(--box-shadow); /* Sombra personalizada */
+  background-color: var(--white-color); /* Color de fondo personalizado */
+  pointer-events: none; /* Eventos de puntero desactivados */
+}
+
+/* Estilos para la barra de navegación activa */
+.navbar.is-active {
+  transform: translateY(0%); /* Desplazamiento vertical a 0% */
+  opacity: 1; /* Opacidad completa */
+  pointer-events: visible; /* Eventos de puntero habilitados */
+}
+
+/* Estilos para la lista no ordenada dentro de la barra de navegación */
+.header .navbar ul {
+  width: 100%; /* Ancho al 100% del contenedor */
+  height: max-content; /* Altura máxima basada en el contenido */
+  display: flex; /* Elemento contenedor flexible */
+  flex-direction: column; /* Dirección de columna */
+  align-items: center; /* Centrar verticalmente los elementos */
+}
+
+/* Estilos para cada elemento de la lista dentro de la barra de navegación */
+.header .navbar ul li {
+  width: 100%; /* Ancho al 100% del contenedor */
+}
+
+/* Estilos para los enlaces dentro de cada elemento de la lista de la barra de navegación */
+.header .navbar ul li a {
+  display: flex; /* Elemento contenedor flexible */
+  justify-content: center; /* Centrar horizontalmente los elementos */
+  align-items: center; /* Centrar verticalmente los elementos */
+  width: 100%; /* Ancho al 100% del contenedor */
+  padding: 1.5rem 1rem; /* Relleno interno */
+  gap: 1rem; /* Espacio entre elementos */
+  transition: background-color 0.3s ease-in-out; /* Transición animada para el color de fondo */
+}
+
+/* Estilos para los enlaces al pasar el cursor */
+.header .navbar ul li a:hover {
+  background-color: var(
+    --complementary-color
+  ); /* Color de fondo personalizado al pasar el cursor */
+}
+
+/* Estilos para el botón de hamburguesa dentro del encabezado */
+.header .hamburger-btn {
+  width: 3rem; /* Ancho de 3 rem */
+  height: 3rem; /* Altura de 3 rem */
+  background-color: var(--first-color); /* Color de fondo personalizado */
+  border: none; /* Sin borde */
+  cursor: pointer; /* Cambiar el cursor a un puntero */
+  order: -1; /* Cambiar el orden de visualización */
+}
+
+/* Estilos para el ícono SVG dentro del botón de hamburguesa del encabezado */
+.header .hamburger-btn svg {
+  width: 3rem; /* Ancho de 3 rem */
+  height: 3rem; /* Altura de 3 rem */
+  background-color: var(--first-color); /* Color de fondo personalizado */
+}
+
+/* ***** CARDS ***** */
+
+/* Estilos para la sección de tarjetas de productos */
+.products-cards {
+  width: 100vw; /* Ancho igual al ancho de la ventana del navegador */
+  display: grid; /* Elemento contenedor de cuadrícula */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(160px, 1fr)
+  ); /* Columnas de tamaño automático */
+  place-content: center; /* Centrar los elementos en la cuadrícula */
+  gap: 1rem 0.5rem; /* Espacio entre elementos verticalmente y horizontalmente */
+  padding: 1rem; /* Relleno interno de la sección */
+}
+
+/* Estilos para las tarjetas de producto */
+.products-cards .card {
+  margin: 0 auto; /* Centrar horizontalmente la tarjeta */
+  max-width: 250px; /* Ancho máximo de la tarjeta */
+  padding: 0.5rem 1rem; /* Relleno interno de la tarjeta */
+  border-radius: 15px; /* Radio de borde para esquinas redondeadas */
+  background-color: var(--white-color); /* Color de fondo personalizado */
+  box-shadow: var(--box-shadow); /* Sombra de la tarjeta */
+  display: flex; /* Elemento contenedor flexible */
+  flex-direction: column; /* Dirección de columna */
+  justify-content: space-between; /* Distribución espaciada verticalmente */
+  animation: cardFadeIn 0.5s ease-in-out var(--card-delay); /* Animación de desvanecimiento de la tarjeta */
+}
+
+/* Estilos para los elementos 'div' dentro de las tarjetas de producto */
+.products-cards .card div {
+  display: flex; /* Elemento contenedor flexible */
+  flex-direction: column; /* Dirección de columna */
+  justify-content: center; /* Centrar verticalmente los elementos */
+  align-items: center; /* Centrar horizontalmente los elementos */
+}
+
+/* Estilos para el texto de las tarjetas de producto */
+.products-cards .card .card-text {
+  align-items: flex-start; /* Alinear el texto a la izquierda */
+  font-size: 13px; /* Tamaño de fuente */
+  font-weight: bold; /* Peso de fuente en negrita */
+  color: var(--first-alpha-color); /* Color de texto personalizado */
+}
+
+/* Estilos para el elemento 'span' dentro del texto de las tarjetas de producto */
+.products-cards .card .card-text span {
+  font-size: 1.75rem; /* Tamaño de fuente */
+  color: var(--first-color); /* Color personalizado */
+}
+
+/* Estilos para la imagen dentro de las tarjetas de producto */
+.products-cards .card .card-img img {
+  aspect-ratio: 3/4; /* Relación de aspecto de la imagen */
+  object-fit: contain; /* Ajustar imagen dentro del contenedor */
+  width: 100%; /* Ancho al 100% del contenedor */
+  transition: transform 0.5s ease; /* Transición animada */
+}
+
+/* Estilos para los enlaces dentro de las tarjetas de producto */
+.products-cards .card a {
+  width: 100%; /* Ancho al 100% del contenedor */
+  padding: 0.6rem 1rem; /* Relleno interno del enlace */
+  display: flex; /* Elemento contenedor flexible */
+  justify-content: center; /* Centrar horizontalmente los elementos */
+  align-items: center; /* Centrar verticalmente los elementos */
+  gap: 1rem; /* Espacio entre elementos */
+}
+
+/* Estilos para los íconos SVG dentro de los enlaces de las tarjetas de producto */
+.products-cards .card a svg {
+  fill: var(--white-color); /* Color de relleno personalizado */
+  width: 1.5em; /* Ancho del ícono */
+  height: 1.5rem; /* Altura del ícono */
+}
+
+/* Footer */
+
+/* Estilos del pie de página */
+.footer {
+  width: 100vw; /* Ancho igual al ancho de la ventana del navegador */
+  background-color: var(--first-color); /* Color de fondo personalizado */
+  color: var(--white-color); /* Color de texto personalizado */
+}
+
+/* Estilos del contenedor dentro del pie de página */
+.footer .container {
+  width: 100vw; /* Ancho igual al ancho de la ventana del navegador */
+  display: flex; /* Contenedor flexible */
+  flex-direction: column; /* Dirección de columnas */
+  justify-content: center; /* Centrar verticalmente los elementos */
+  align-items: center; /* Centrar horizontalmente los elementos */
+  gap: 1rem; /* Espacio vertical entre elementos */
+  padding: 1.5rem; /* Relleno interno del contenedor */
+}
+
+/* Estilos del detalle dentro del pie de página */
+.footer .footer-details {
+  width: 100%; /* Ancho igual al 100% de su contenedor */
+  display: flex; /* Contenedor flexible */
+  flex-direction: column; /* Dirección de columnas */
+  justify-content: center; /* Centrar verticalmente los elementos */
+  border-bottom: 5px solid var(--white-color); /* Borde inferior personalizado */
+}
+
+/* Estilos para los elementos 'details' dentro del pie de página */
+.footer .footer-details details {
+  min-width: max-content; /* Ancho mínimo igual al ancho de su contenido */
+}
+
+/* Estilos para los elementos 'summary' dentro del pie de página */
+.footer details summary {
+  font-size: calc(
+    1vw + 0.8rem
+  ); /* Tamaño de fuente basado en unidades de vista */
+  font-weight: bold; /* Fuente en negrita */
+  margin-bottom: 1rem; /* Margen inferior */
+}
+
+/* Estilos para los elementos 'div' dentro del pie de página */
+.footer details div {
+  display: flex; /* Contenedor flexible */
+  flex-direction: column; /* Dirección de columnas */
+  margin-bottom: 0.5rem; /* Margen inferior */
+}
+
+/* Estilos para los enlaces dentro del pie de página */
+.footer details div a {
+  color: var(--white-color); /* Color de texto personalizado */
+  font-weight: bold; /* Fuente en negrita */
+}
+
+/* Estilos para el contenedor de redes sociales dentro del pie de página */
+.footer .social-media-container {
+  width: 100%; /* Ancho igual al 100% */
+  display: flex; /* Contenedor flexible */
+  flex-direction: column; /* Dirección de columnas */
+  align-items: center; /* Centrar horizontalmente los elementos */
+  gap: 0.5rem; /* Espacio vertical entre elementos */
+  padding: 1rem; /* Relleno interno del contenedor */
+}
+
+/* Estilos para el título de redes sociales dentro del pie de página */
+.footer .social-media-container h2 {
+  text-align: center; /* Alineación del texto centrada */
+  font-size: calc(
+    2vw + 0.8rem
+  ); /* Tamaño de fuente basado en unidades de vista */
+}
+
+/* Estilos para los íconos de redes sociales dentro del pie de página */
+.footer .social-media-container .social-media-icons {
+  width: 100%; /* Ancho igual al 100% */
+  display: flex; /* Contenedor flexible */
+  align-items: center; /* Centrar horizontalmente los elementos */
+  justify-content: center; /* Centrar verticalmente los elementos */
+  gap: 1rem; /* Espacio entre íconos */
+}
+
+/* Estilos para los íconos SVG de redes sociales dentro del pie de página */
+.footer .social-media-container .social-media-icons a svg {
+  width: 32px; /* Ancho del ícono */
+  height: 32px; /* Altura del ícono */
+  color: var(--white-color); /* Color del ícono personalizado */
+}
+
+/* FORMULARIO */
+
+/* Estilos para el formulario */
+.form {
+  background-color: var(--white-color); /* Color de fondo personalizado */
+  border-radius: 10px; /* Radio de borde de 10px */
+  display: flex; /* Mostrar como flex */
+  flex-direction: column; /* Dirección de columna */
+  justify-content: center; /* Centrar verticalmente */
+  align-items: center; /* Centrar horizontalmente */
+  gap: 2rem; /* Espacio entre elementos internos */
+  padding: 1rem; /* Relleno de 1rem */
+}
+
+.form div {
+  width: 100%; /* Ancho del 100% */
+  border-radius: 20px; /* Radio de borde de 20px */
+  display: flex; /* Mostrar como flex */
+  flex-direction: column; /* Dirección de columna */
+  justify-content: center; /* Centrar verticalmente */
+  align-items: flex-start; /* Alinear a la izquierda horizontalmente */
+}
+
+.form div:last-of-type {
+  grid-column: span 2; /* Ocupar dos columnas en la cuadrícula */
+}
+
+.form div:nth-of-type(5) {
+  grid-column: span 2; /* Ocupar dos columnas en la cuadrícula */
+}
+
+.form h2 {
+  font-size: 1.5rem; /* Tamaño de fuente de 1.5rem */
+  font-weight: bold; /* Peso de fuente en negrita */
+  color: var(--first-color); /* Color de texto personalizado */
+}
+
+.form div label {
+  min-width: max-content; /* Ancho mínimo según el contenido */
+  font-size: 1rem; /* Tamaño de fuente de 1rem */
+  font-weight: bold; /* Peso de fuente en negrita */
+  color: var(--first-color); /* Color de texto personalizado */
+}
+
+.form div input:hover,
+.form div textarea:hover,
+.form div input:focus,
+.form div textarea:focus {
+  border: 1px solid var(--first-color); /* Borde de 1px sólido personalizado */
+}
+
+.form div input:valid,
+.form div textarea:valid {
+  border: rgb(18, 190, 61); /* Borde válido personalizado */
+}
+
+.form div input,
+.form div textarea {
+  width: 100%; /* Ancho del 100% */
+  padding: 1rem 2rem; /* Relleno de 1rem arriba y abajo, 2rem izquierda y derecha */
+  height: 100%; /* Altura del 100% */
+  border: none; /* Sin borde */
+  border-bottom: 1px solid var(--white-color); /* Borde inferior de 1px sólido personalizado */
+  outline: none; /* Sin contorno */
+  background-color: var(--white-color); /* Color de fondo personalizado */
+  box-shadow: var(--box-shadow); /* Sombra de caja personalizada */
+  border-radius: 10px; /* Radio de borde de 10px */
+  color: var(--first-color); /* Color de texto personalizado */
+  resize: none; /* No redimensionable */
+}
+
+.form input[type="submit"] {
+  width: 50%; /* Ancho del 50% */
+  padding: 0.5rem 1rem; /* Relleno de 0.5rem arriba y abajo, 1rem izquierda y derecha */
+  font-size: 1rem; /* Tamaño de fuente de 1rem */
+  font-weight: bold; /* Peso de fuente en negrita */
+  border-radius: 15px; /* Radio de borde de 15px */
+  border: none; /* Sin borde */
+  color: var(--white-color); /* Color de texto personalizado */
+  background-color: var(--second-color); /* Color de fondo personalizado */
+  transition: transform 0.5s ease; /* Transición de transformación de 0.5s */
+}
+
+.form input[type="submit"]:hover,
+.form input[type="submit"]:focus {
+  transform: scale(1.1); /* Escala de transformación de 1.1 */
+}
+
+@media (min-width: 480px) {
+  .products-cards {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(220px, 1fr)
+    ); /* Columnas automáticas con tamaño mínimo de 220px y máximo de 1fr */
+  }
+}
+
+@media (min-width: 768px) {
+  /* Estilos para pantallas con un ancho mínimo de 768px */
+
+  /* Estilos para la sección de héroe */
+  .hero-section {
+    justify-content: flex-start; /* Justificar contenido al comienzo */
+  }
+
+  .hero-text {
+    align-items: flex-start; /* Alinear elementos al comienzo verticalmente */
+    text-align: start; /* Alinear texto al comienzo */
+  }
+  /* Fin de estilos para la sección de héroe */
+
+  .header .navbar {
+    bottom: 4rem; /* Espacio de 4rem desde la parte inferior */
+    left: 0; /* Alinear a la izquierda */
+    opacity: 0; /* Opacidad 0 (invisibilidad) */
+    transform: translateX(
+      -100%
+    ); /* Traslación hacia la izquierda fuera de la pantalla */
+    width: 35vw; /* Ancho del 35% del viewport */
+    height: calc(100vh - 4rem); /* Altura calculada como 100vh menos 4rem */
+    transition: all 0.5s ease-in-out; /* Transición de todas las propiedades con duración de 0.5s */
+    display: flex; /* Mostrar como flex */
+    flex-direction: column; /* Dirección de columna */
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+  }
+
+  .navbar.is-active {
+    transform: translateX(
+      0%
+    ); /* Traslación hacia la derecha para mostrar en la pantalla */
+    opacity: 1; /* Opacidad 1 (visible) */
+  }
+
+  .footer {
+    width: 100vw; /* Ancho del 100% del viewport */
+    height: auto; /* Altura automática */
+    background-color: var(--first-color); /* Color de fondo personalizado */
+    color: var(--white-color); /* Color de texto personalizado */
+  }
+
+  .footer .container {
+    width: 100vw; /* Ancho del 100% del viewport */
+    height: 100%; /* Altura del 100% */
+    display: flex; /* Mostrar como flex */
+    flex-direction: row; /* Dirección de fila */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    gap: 1rem; /* Espacio entre elementos internos */
+    padding: 1.5rem; /* Relleno de 1.5rem */
+  }
+
+  .footer .footer-details {
+    width: 60%; /* Ancho del 60% */
+    height: 100%; /* Altura del 100% */
+    border: none; /* Sin borde */
+    border-right: 3px solid var(--white-color); /* Borde derecho de 3px sólido personalizado */
+  }
+
+  .footer details summary {
+    font-size: calc(1vw + 0.5rem); /* Tamaño de fuente calculado */
+    font-weight: bold; /* Peso de fuente en negrita */
+  }
+
+  .footer .social-media-container {
+    width: 40%; /* Ancho del 40% */
+  }
+
+  .footer .social-media-container h2 {
+    text-align: center; /* Alinear texto al centro */
+    font-size: calc(2vw + 0.2rem); /* Tamaño de fuente calculado */
+  }
+
+  .footer .social-media-container .social-media-icons {
+    width: 100%; /* Ancho del 100% */
+    display: flex; /* Mostrar como flex */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    gap: 1rem; /* Espacio entre elementos internos */
+  }
+
+  .footer .social-media-container .social-media-icons a svg {
+    width: 32px; /* Ancho de 32px */
+    height: 32px; /* Altura de 32px */
+    color: var(--white-color); /* Color personalizado */
+  }
+}
+
+@media (min-width: 1200px) {
+  /* Estilos para pantallas con un ancho mínimo de 1200px */
+
+  .header {
+    position: sticky; /* Posición pegajosa */
+    top: 0; /* Alinear en la parte superior */
+    left: 0; /* Alinear a la izquierda */
+  }
+
+  .header .logo {
+    transform: translateX(0); /* Traslación hacia la derecha de 0px */
+  }
+
+  .header .navbar {
+    position: static; /* Posición estática */
+    width: auto; /* Ancho automático */
+    height: auto; /* Altura automática */
+    transform: translate(0, 0); /* Traslación nula */
+    opacity: 1; /* Opacidad 1 (visible) */
+    box-shadow: none; /* Sin sombra */
+    background-color: transparent; /* Fondo transparente */
+    pointer-events: visible; /* Eventos de puntero visibles */
+  }
+
+  .header .navbar ul {
+    flex-direction: row; /* Dirección de fila */
+    justify-content: space-evenly; /* Distribución uniforme del espacio */
+  }
+
+  .header .navbar ul a {
+    text-align: center; /* Alinear texto al centro */
+    height: 100%; /* Altura del 100% */
+    color: white; /* Color de texto personalizado */
+  }
+  .header .navbar ul li {
+    max-width: max-content; /* Ancho máximo de contenido */
+    text-align: center; /* Alinear texto al centro */
+    height: 100%; /* Altura del 100% */
+    color: white; /* Color de texto personalizado */
+  }
+
+  .header .navbar ul li a:hover {
+    background-color: transparent; /* Fondo transparente al pasar el ratón */
+  }
+
+  .hamburger-btn {
+    display: none; /* Ocultar el botón de hamburguesa */
+  }
+}

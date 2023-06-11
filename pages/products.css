@@ -1,235 +1,231 @@
+/* Oculta las barras de desplazamiento del navegador web */
 body::-webkit-scrollbar {
   display: none;
 }
 
+/* Estilos para el contenedor principal */
 .main {
-  margin-top: 4rem;
-  width: 100vw;
-  height: max-content;
+  margin-top: 4rem; /* Margen superior de 4rem */
+  width: 100vw; /* Ancho del 100% del viewport */
+  height: max-content; /* Altura ajustada al contenido */
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 1rem;
+  justify-content: center; /* Centra horizontalmente los elementos */
+  align-items: center; /* Centra verticalmente los elementos */
+  flex-direction: column; /* Apila los elementos verticalmente */
+  gap: 1rem; /* Espacio de separación vertical entre elementos de 1rem */
 }
 
-/* ***** FORM ***** */
+/* ----- FORMULARIO ----- */
+
+/* Contenedor del formulario y elementos adyacentes */
 .products-aside-container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  gap: 1rem;
+  flex-direction: column; /* Apila los elementos verticalmente */
+  justify-content: center; /* Centra horizontalmente los elementos */
+  align-items: center; /* Centra verticalmente los elementos */
+  width: 100vw; /* Ancho del 100% del viewport */
+  gap: 1rem; /* Espacio de separación vertical entre elementos de 1rem */
 }
+
 .products-form {
-  margin: 1rem;
-  margin-bottom: 0;
+  margin: 1rem; /* Margen de 1rem */
+  margin-bottom: 0; /* Elimina el margen inferior */
   display: grid;
-  place-content: center;
-  position: relative;
+  place-content: center; /* Centra los elementos en el contenedor */
+  position: relative; /* Posición relativa */
 }
 
 .products-form .search-placeholder {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  justify-content: center; /* Centra horizontalmente los elementos */
+  align-items: center; /* Centra verticalmente los elementos */
+  gap: 0.5rem; /* Espacio de separación horizontal entre elementos de 0.5rem */
+  position: absolute; /* Posición absoluta */
+  top: 50%; /* Coloca en el centro vertical */
+  left: 50%; /* Coloca en el centro horizontal */
+  transform: translate(-50%, -50%); /* Centra exactamente en el centro */
 }
 
 .products-form .search-placeholder svg {
-  fill: var(--gray-dark-color);
-  width: 1.6rem;
-  height: 1.6rem;
+  fill: var(--gray-dark-color); /* Color de relleno */
+  width: 1.6rem; /* Ancho de 1.6rem */
+  height: 1.6rem; /* Altura de 1.6rem */
 }
+
 .products-form .search-placeholder span {
-  color: var(--gray-dark-color);
+  color: var(--gray-dark-color); /* Color de texto */
 }
 
 .products-form form input {
-  width: 70vw;
-  height: 2.5rem;
-  padding: 1.5rem;
-  border-radius: 1.25rem;
-  text-align: center;
-  border: none;
-  outline: none;
+  width: 70vw; /* Ancho del 70% del viewport */
+  height: 2.5rem; /* Altura de 2.5rem */
+  padding: 1.5rem; /* Relleno de 1.5rem */
+  border-radius: 1.25rem; /* Radio de borde de 1.25rem */
+  text-align: center; /* Alineación centrada del texto */
+  border: none; /* Sin borde */
+  outline: none; /* Sin contorno */
 }
 
-.products-form form input:focus ~ .search-placeholder,
-.products-form form input:not(:empty) ~ .search-placeholder {
-  display: none;
+.products-form form input:focus ~ .search-placeholder {
+  display: none; /* Oculta el texto de marcador de posición al enfocar el campo de entrada */
 }
 
-/* ***** CATEGORIES ***** */
+/* ----- CATEGORÍAS ----- */
+
 .products-aside-container {
-  position: sticky;
-  top: 4rem;
-  left: 0;
-  background-color: var(--gray-color);
+  position: sticky; /* Posición pegajosa */
+  top: 4rem; /* Coloca a 4rem desde la parte superior */
+  left: 0; /* Coloca a la izquierda */
+  background-color: var(--gray-color); /* Color de fondo */
 }
+
 .products-categories {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 1rem;
-  position: relative;
-  width: 100vw;
-  overflow-x: auto;
-  height: 5rem;
-  padding: 0 1rem;
+  justify-content: flex-start; /* Justifica hacia la izquierda los elementos */
+  align-items: center; /* Centra verticalmente los elementos */
+  gap: 1rem; /* Espacio de separación horizontal entre elementos de 1rem */
+  position: relative; /* Posición relativa */
+  width: 100vw; /* Ancho del 100% del viewport */
+  overflow-x: auto; /* Permite desplazamiento horizontal */
+  height: 5rem; /* Altura de 5rem */
+  padding: 0 1rem; /* Relleno horizontal de 0 y 1rem */
 }
 
 .products-categories::-webkit-scrollbar {
-  display: none;
+  display: none; /* Oculta las barras de desplazamiento del navegador web */
 }
 
 .products-categories button {
-  padding: 0.7rem 1rem;
-  min-width: max-content;
-  border-radius: 10px;
-  border: none;
-  font-weight: bold;
-  background-color: #799dfa;
-  color: var(--first-color);
-  box-shadow: var(--box-shadow);
+  padding: 0.7rem 1rem; /* Relleno vertical y horizontal */
+  min-width: max-content; /* Ancho mínimo basado en el contenido */
+  border-radius: 10px; /* Radio de borde de 10px */
+  border: none; /* Sin borde */
+  font-weight: bold; /* Peso de fuente en negrita */
+  background-color: #799dfa; /* Color de fondo */
+  color: var(--first-color); /* Color de texto */
+  box-shadow: var(--box-shadow); /* Sombra de caja */
 }
 
 .products-categories button.active {
-  color: var(--white-color);
-  background-color: var(--first-color);
+  color: var(--white-color); /* Color de texto */
+  background-color: var(--first-color); /* Color de fondo */
 }
-/* ***** PRODUCT CARDS ***** */
+
+/* ----- TARJETAS DE PRODUCTO ----- */
 
 .primary-btn {
   display: flex;
-  justify-content: space-between !important;
-  align-items: center;
+  justify-content: space-between !important; /* Justifica espacio entre los elementos */
+  align-items: center; /* Centra verticalmente los elementos */
 }
 
-/* IMPORTANTE: los estilos de esta seccion se toman de la hoja "utilities.css" */
-
-@media (min-width: 320px) {
-}
-
-@media (min-width: 375px) {
-}
-
-@media (min-width: 414px) {
-}
-
-@media (min-width: 480px) {
-}
-
-@media (min-width: 768px) {
-}
+/* IMPORTANTE: los estilos de esta sección se toman de la hoja "utilities.css" */
 
 @media (min-width: 992px) {
   .main {
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 0;
-    background-color: var(--first-color);
+    flex-direction: row; /* Cambia la dirección de apilamiento a horizontal */
+    align-items: flex-start; /* Alinea los elementos al principio */
+    gap: 0; /* Sin espacio de separación entre elementos */
+    background-color: var(--first-color); /* Color de fondo */
   }
 
   .products-aside-container {
-    height: calc(100vh - 4rem);
-    flex-direction: column;
-    justify-content: flex-start;
-    background-color: var(--first-color);
-    flex-grow: 1;
-    overflow: hidden;
+    height: calc(100vh - 4rem); /* Altura calculada */
+    flex-direction: column; /* Apila los elementos verticalmente */
+    justify-content: flex-start; /* Justifica los elementos al principio */
+    background-color: var(--first-color); /* Color de fondo */
+    flex-grow: 1; /* Crecimiento flexible de 1 */
+    overflow: hidden; /* Oculta el desbordamiento */
   }
 
   .products-cards {
-    background-color: var(--gray-color);
-    border-radius: 30px;
-    flex-grow: 6;
-    min-width: 70vw;
-    min-height: 99vh;
+    background-color: var(--gray-color); /* Color de fondo */
+    border-radius: 30px; /* Radio de borde de 30px */
+    flex-grow: 6; /* Crecimiento flexible de 6 */
+    min-width: 70vw; /* Ancho mínimo del 70% del viewport */
+    min-height: 99vh; /* Altura mínima del 99% del viewport */
   }
 
   .products-form {
-    flex-grow: 1;
+    flex-grow: 1; /* Crecimiento flexible de 1 */
   }
 
   .products-form form input {
-    width: 20vw;
+    width: 20vw; /* Ancho del 20% del viewport */
   }
 
   .products-categories {
-    width: 100%;
-    height: 70vh;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 2rem;
-    overflow-y: scroll;
-    padding: 0.5rem 0;
-    flex-grow: 6;
+    width: 100%; /* Ancho del 100% */
+    height: 70vh; /* Altura de 70vh */
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: flex-end; /* Alinea los elementos a la derecha */
+    gap: 2rem; /* Espacio de separación vertical entre elementos de 2rem */
+    overflow-y: scroll; /* Permite desplazamiento vertical */
+    padding: 0.5rem 0; /* Relleno vertical de 0.5rem y sin relleno horizontal */
+    flex-grow: 6; /* Crecimiento flexible de 6 */
   }
 
   .products-categories button {
-    width: 80%;
-    height: 3rem;
-    background-color: var(--first-color);
-    border-radius: 20px 0 0 20px;
-    justify-content: flex-end;
-    color: var(--white-color);
-    position: relative;
+    width: 80%; /* Ancho del 80% */
+    height: 3rem; /* Altura de 3rem */
+    background-color: var(--first-color); /* Color de fondo */
+    border-radius: 20px 0 0 20px; /* Radio de borde */
+    justify-content: flex-end; /* Justifica hacia la derecha los elementos */
+    color: var(--white-color); /* Color de texto */
+    position: relative; /* Posición relativa */
   }
 
   .products-categories button.active {
-    background-color: var(--gray-color);
-    color: var(--first-color);
+    background-color: var(--gray-color); /* Color de fondo */
+    color: var(--first-color); /* Color de texto */
   }
 
   .products-categories button.active::before {
-    box-shadow: 1.5px 5px 0 var(--gray-color);
+    box-shadow: 1.5px 5px 0 var(--gray-color); /* Sombra de caja */
   }
   .products-categories button.active::after {
-    box-shadow: 1.5px -5px 0 var(--gray-color);
+    box-shadow: 1.5px -5px 0 var(--gray-color); /* Sombra de caja */
   }
 
   .products-categories button::before {
-    position: absolute;
-    content: "";
-    width: 0.5rem;
-    height: 1rem;
-    background-color: transparent;
-    right: 0;
-    bottom: 100%;
-    border-bottom-right-radius: 0.5rem;
-    box-shadow: 1px 5px 0 var(--first-color);
+    position: absolute; /* Posición absoluta */
+    content: ""; /* Contenido vacío */
+    width: 0.5rem; /* Ancho de 0.5rem */
+    height: 1rem; /* Altura de 1rem */
+    background-color: transparent; /* Color de fondo transparente */
+    right: 0; /* Coloca a la derecha */
+    bottom: 100%; /* Coloca arriba del botón */
+    border-bottom-right-radius: 0.5rem; /* Radio de borde inferior derecho */
+    box-shadow: 1px 5px 0 var(--first-color); /* Sombra de caja */
   }
   .products-categories button::after {
-    position: absolute;
-    content: "";
-    width: 1rem;
-    height: 2rem;
-    background-color: transparent;
-    right: 0;
-    top: 100%;
-    border-top-right-radius: 0.5rem;
-    box-shadow: 2rem 2rem 0 var(--second-color);
+    position: absolute; /* Posición absoluta */
+    content: ""; /* Contenido vacío */
+    width: 1rem; /* Ancho de 1rem */
+    height: 2rem; /* Altura de 2rem */
+    background-color: transparent; /* Color de fondo transparente */
+    right: 0; /* Coloca a la derecha */
+    top: 100%; /* Coloca debajo del botón */
+    border-top-right-radius: 0.5rem; /* Radio de borde superior derecho */
+    box-shadow: 2rem 2rem 0 var(--second-color); /* Sombra de caja */
   }
 
   .products-cards {
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    width: 70vw;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(220px, 1fr)
+    ); /* Columnas flexibles */
+    width: 70vw; /* Ancho del 70% del viewport */
   }
 
   .footer {
-    width: 70vw;
-    display: none;
+    width: 70vw; /* Ancho del 70% del viewport */
+    display: none; /* Oculta el elemento */
   }
 }
 
 @media (min-width: 1200px) {
   .main {
-    margin-top: 0;
+    margin-top: 0; /* Elimina el margen superior */
   }
 }

@@ -1,4 +1,4 @@
-import { getElement } from "../utilities.js";
+import { getElement } from "../utilities/utilities.js";
 
 export default function Menu(e) {
   const $navbar = getElement({ selector: ".navbar" });

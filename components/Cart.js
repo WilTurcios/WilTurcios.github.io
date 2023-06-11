@@ -1,4 +1,4 @@
-import { createElement, delay, getElement } from "../utilities.js";
+import { createElement, delay, getElement } from "../utilities/utilities.js";
 
 let isBought = false;
 

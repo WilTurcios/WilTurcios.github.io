@@ -1,5 +1,5 @@
 import PRODUCTS from "../services/db.js";
-import { getElement } from "../utilities.js";
+import { getElement } from "../utilities/utilities.js";
 
 export default function Detail({ target }) {
   const $detail = getElement({ selector: target });

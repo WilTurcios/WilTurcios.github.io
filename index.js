@@ -6,7 +6,7 @@ import Cart from "./components/Cart.js";
 import Detail from "./components/Detail.js";
 import Menu from "./components/Menu.js";
 
-import { createElement, getElement } from "./utilities.js";
+import { createElement, getElement } from "./utilities/utilities.js";
 import { CreatePaymentModal, closeModal } from "./components/PaymentModal.js";
 
 const d = document;

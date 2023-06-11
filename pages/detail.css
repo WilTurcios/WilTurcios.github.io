@@ -1,191 +1,212 @@
+/* Oculta la barra de desplazamiento en WebKit */
 body::-webkit-scrollbar {
   display: none;
 }
 
+/* Estilos para la tarjeta de detalle */
 .detail-card {
-  height: calc(100vh - 4rem);
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 4rem;
+  height: calc(
+    100vh - 4rem
+  ); /* Establece la altura de la tarjeta como el 100% del viewport menos 4rem */
+  width: 100vw; /* Establece el ancho de la tarjeta como el 100% del viewport */
+  display: flex; /* Hace que los elementos dentro de la tarjeta se muestren en línea */
+  flex-direction: column; /* Establece la dirección de los elementos dentro de la tarjeta como vertical */
+  justify-content: space-between; /* Distribuye el espacio verticalmente entre los elementos dentro de la tarjeta */
+  align-items: center; /* Centra los elementos horizontalmente dentro de la tarjeta */
+  margin-top: 4rem; /* Establece un margen superior de 4rem */
 }
 
+/* Estilos para el botón de retroceso */
 .detail-card .back {
-  position: absolute;
-  top: 5rem;
-  left: 0.5rem;
-  width: 2rem;
-  height: 2rem;
-  color: var(--second-color);
-  background-color: transparent;
-  border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
+  position: absolute; /* Establece la posición del botón como absoluta */
+  top: 5rem; /* Establece la posición superior del botón */
+  left: 0.5rem; /* Establece la posición izquierda del botón */
+  width: 2rem; /* Establece el ancho del botón */
+  height: 2rem; /* Establece la altura del botón */
+  color: var(--second-color); /* Establece el color del texto del botón */
+  background-color: transparent; /* Establece el fondo del botón como transparente */
+  border: none; /* Elimina el borde del botón */
+  display: flex; /* Hace que los elementos dentro del botón se muestren en línea */
+  justify-content: center; /* Centra los elementos horizontalmente dentro del botón */
+  align-items: center; /* Centra los elementos verticalmente dentro del botón */
+  cursor: pointer; /* Establece el cursor del botón como un puntero */
 }
 
+/* Estilos para el ícono de retroceso */
 .detail-card .back svg {
-  width: 2rem;
-  height: 2rem;
+  width: 2rem; /* Establece el ancho del ícono */
+  height: 2rem; /* Establece la altura del ícono */
 }
 
-.detail-card .detail-card-img {
-  display: grid;
-  place-content: center;
-  width: 100%;
-  max-width: 400px;
-  padding: 1rem;
-  margin: 1rem auto;
+/* Estilos para el contenedor de contenido de la tarjeta de detalle */
+.detail-card .detail-card-content-container {
+  width: 100%; /* Establece el ancho del contenedor de contenido al 100% */
+  display: flex; /* Hace que los elementos dentro del contenedor se muestren en línea */
+  flex-direction: column; /* Establece la dirección de los elementos dentro del contenedor como vertical */
+  align-items: center; /* Centra los elementos horizontalmente dentro del contenedor */
+  justify-content: space-between; /* Distribuye el espacio verticalmente entre los elementos dentro del contenedor */
+  gap: 1rem; /* Establece el espacio entre los elementos dentro del contenedor */
+  padding: 1rem; /* Establece el relleno del contenedor */
+  padding-top: 1.5rem; /* Establece el relleno superior del contenedor */
+  border-radius: 30px 30px 0 0; /* Establece el radio de borde en la parte superior del contenedor */
+  background-color: var(
+    --white-color
+  ); /* Establece el color de fondo del contenedor */
+  color: var(
+    --gray-dark-color
+  ); /* Establece el color de texto del contenedor */
+}
+
+.detail-card .detail-header .detail-card-img {
   mix-blend-mode: multiply;
 }
 
-.detail-card .detail-card-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.detail-card .detail-card-content-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 1rem;
-  padding-top: 1.5rem;
-  border-radius: 30px 30px 0 0;
-  background-color: var(--white-color);
-  color: var(--gray-dark-color);
-}
-
+/* Estilos para el título dentro del contenedor de contenido */
 .detail-card .detail-card-content h2 {
-  text-align: center;
-  font-size: 1rem;
+  text-align: center; /* Centra el texto del título */
+  font-size: 1rem; /* Establece el tamaño de fuente del título */
 }
+
+/* Estilos para el párrafo dentro del contenedor de contenido */
 .detail-card .detail-card-content p {
-  font-size: 0.7rem;
+  font-size: 0.7rem; /* Establece el tamaño de fuente del párrafo */
 }
 
+/* Estilos para el precio dentro del contenedor de contenido */
 .detail-card .detail-card-content span {
-  color: var(--price-color);
-  font-size: 2rem;
-  font-weight: 900;
+  color: var(--price-color); /* Establece el color del precio */
+  font-size: 2rem; /* Establece el tamaño de fuente del precio */
+  font-weight: 900; /* Establece el peso de fuente del precio como negrita */
 }
 
+/* Estilos para las acciones de la tarjeta de detalle */
 .detail-card .detail-card-actions {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: stretch;
-  gap: 0.5rem;
+  width: 100%; /* Establece el ancho de las acciones al 100% */
+  display: flex; /* Hace que los elementos de las acciones se muestren en línea */
+  justify-content: space-between; /* Distribuye el espacio horizontalmente entre los elementos de las acciones */
+  flex-direction: column; /* Establece la dirección de los elementos de las acciones como vertical */
+  align-items: stretch; /* Estira los elementos de las acciones para que ocupen todo el ancho */
+  gap: 0.5rem; /* Establece el espacio entre los elementos de las acciones */
 }
 
+/* Estilos para los botones de las acciones */
 .detail-card-actions button {
-  order: 1;
+  order: 1; /* Cambia el orden de los botones a la primera posición */
 }
 
+/* Estilos para el contenedor de selección de las acciones */
 .detail-card-actions div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  width: 100%;
-  padding: 0.7rem 1rem;
+  display: flex; /* Hace que los elementos dentro del contenedor se muestren en línea */
+  align-items: center; /* Centra los elementos horizontalmente dentro del contenedor */
+  justify-content: center; /* Centra los elementos verticalmente dentro del contenedor */
+  gap: 0.5rem; /* Establece el espacio entre los elementos dentro del contenedor */
+  width: 100%; /* Establece el ancho del contenedor al 100% */
+  padding: 0.7rem 1rem; /* Establece el relleno del contenedor */
 }
 
-.primary-btn,
-.call-to-action {
-  max-width: 100%;
-}
-
+/* Estilos para el botón de selección dentro del contenedor de selección */
 .detail-card-actions div select {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  font-size: 1rem;
-  font-weight: bold;
-  color: var(--white-color);
-  padding: 8px;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  background-color: transparent; /* Establece el fondo del botón de selección como transparente */
+  border: none; /* Elimina el borde del botón de selección */
+  outline: none; /* Elimina el contorno del botón de selección */
+  font-size: 1rem; /* Establece el tamaño de fuente del botón de selección */
+  font-weight: bold; /* Establece el peso de fuente del botón de selección como negrita */
+  color: var(
+    --white-color
+  ); /* Establece el color de texto del botón de selección */
+  padding: 8px; /* Establece el relleno del botón de selección */
+  appearance: none; /* Elimina los estilos nativos del botón de selección */
+  -webkit-appearance: none; /* Elimina los estilos nativos del botón de selección en WebKit */
+  -moz-appearance: none; /* Elimina los estilos nativos del botón de selección en Firefox */
 }
 
+/* Cambia el color del botón de selección cuando se pasa el cursor sobre él */
 .detail-card-actions div:hover > select {
-  cursor: pointer;
-  color: var(--second-color);
+  cursor: pointer; /* Establece el cursor del botón de selección como un puntero */
+  color: var(
+    --second-color
+  ); /* Cambia el color de texto del botón de selección */
 }
+
+/* Estilos para diferentes tamaños de pantalla */
 
 @media (min-width: 320px) {
+  /* Estilos específicos para pantallas de 320px o más */
 }
 
 @media (min-width: 375px) {
+  /* Estilos específicos para pantallas de 375px o más */
+
   .detail-card .detail-card-content-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 1rem;
-    padding: 1.5rem;
-    border-radius: 30px 30px 0 0;
-    background-color: var(--white-color);
-    color: var(--gray-dark-color);
+    width: 100%; /* Establece el ancho del contenedor de contenido al 100% */
+    display: flex; /* Hace que los elementos dentro del contenedor se muestren en línea */
+    flex-direction: column; /* Establece la dirección de los elementos dentro del contenedor como vertical */
+    align-items: flex-start; /* Alinea los elementos a la izquierda dentro del contenedor */
+    justify-content: space-between; /* Distribuye el espacio verticalmente entre los elementos dentro del contenedor */
+    gap: 1rem; /* Establece el espacio entre los elementos dentro del contenedor */
+    padding: 1.5rem; /* Establece el relleno del contenedor */
+    border-radius: 30px 30px 0 0; /* Establece el radio de borde en la parte superior del contenedor */
+    background-color: var(
+      --white-color
+    ); /* Establece el color de fondo del contenedor */
+    color: var(
+      --gray-dark-color
+    ); /* Establece el color de texto del contenedor */
   }
 
   .detail-card .detail-card-content h2 {
-    text-align: start;
-    font-size: 1.8rem;
+    text-align: start; /* Alinea el texto del título a la izquierda */
+    font-size: 1.8rem; /* Establece el tamaño de fuente del título */
   }
 
   .detail-card .detail-card-content p {
-    font-size: 1rem;
+    font-size: 1rem; /* Establece el tamaño de fuente del párrafo */
   }
+
   .detail-card .detail-card-content span {
-    color: var(--price-color);
-    font-size: calc(4vw + 1.5rem);
-    font-weight: 900;
+    color: var(--price-color); /* Establece el color del precio */
+    font-size: calc(
+      4vw + 1.5rem
+    ); /* Establece el tamaño de fuente del precio de forma responsiva */
+    font-weight: 900; /* Establece el peso de fuente del precio como negrita */
   }
 
   .detail-card .detail-card-actions {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    width: 100%; /* Establece el ancho de las acciones al 100% */
+    display: flex; /* Hace que los elementos de las acciones se muestren en línea */
+    flex-direction: row; /* Establece la dirección de los elementos de las acciones como horizontal */
+    justify-content: space-between; /* Distribuye el espacio horizontalmente entre los elementos de las acciones */
+    align-items: center; /* Centra los elementos verticalmente dentro de las acciones */
   }
 
   .call-to-action {
-    max-width: max-content;
+    max-width: max-content; /* Establece el ancho máximo de la acción principal al tamaño máximo del contenido */
   }
 
   .detail-card-actions button.call-to-action {
-    min-width: 50%;
+    min-width: 50%; /* Establece el ancho mínimo de la acción principal al 50% */
   }
 }
 
-@media (min-width: 414px) {
-}
-
+/* Define estilos para dispositivos con un ancho mínimo de 480px */
 @media (min-width: 480px) {
+  /* Alinea los elementos dentro de la clase ".detail-card-actions" con espacio entre ellos */
   .detail-card .detail-card-actions {
     justify-content: space-between;
   }
 }
 
-@media (min-width: 576px) {
-}
-
+/* Define estilos para dispositivos con un ancho mínimo de 768px */
 @media (min-width: 768px) {
+  /* Aplica un diseño de cuadrícula a la clase ".detail" con dos columnas iguales */
   .detail {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
+  /* Ajusta el alto de la clase ".detail-header" restando 4rem al 100vh (alto de la ventana) */
+  /* Centra verticalmente los elementos dentro de la clase ".detail-header" */
+  /* Cambia el orden de visualización a 1 */
   .detail-header {
     height: calc(100vh - 4rem);
     display: grid;
@@ -193,19 +214,27 @@ body::-webkit-scrollbar {
     order: 1;
   }
 
+  /* Limita el ancho máximo de la imagen dentro de la clase ".detail-card-img" a 40vw (40% del ancho de la ventana) */
   .detail-card .detail-header .detail-card-img {
     max-width: 40vw;
+    mix-blend-mode: multiply !important;
   }
 
+  /* Ajusta el alto de la clase ".detail-body" restando 4rem al 100vh (alto de la ventana) */
+  /* Cambia el orden de visualización a -1 */
   .detail-body {
     height: calc(100vh - 4rem);
     order: -1;
   }
 
+  /* Aplica bordes redondeados a la clase ".detail-card-content-container" en la esquina derecha */
   .detail-body .detail-card-content-container {
     border-radius: 0 30px 30px 0;
   }
 
+  /* Ajusta el alto de la clase ".detail-card-content-container" al 100% */
+  /* Alinea los elementos dentro de la clase ".detail-card-content-container" con espacio entre ellos */
+  /* Centra vertical y horizontalmente los elementos dentro de la clase ".detail-card-content-container" */
   .detail-body .detail-card-content-container {
     height: 100%;
     justify-content: space-between;
@@ -213,10 +242,14 @@ body::-webkit-scrollbar {
     text-align: center;
   }
 
+  /* Alinea el texto del título (h2) en el centro */
   .detail-body .detail-card-content-container h2 {
     text-align: center;
   }
 
+  /* Ajusta el ancho al 100% y muestra los elementos de la clase ".detail-card-actions" en una columna */
+  /* Alinea los elementos dentro de la clase ".detail-card-actions" con espacio entre ellos */
+  /* Ordena los botones antes que otros elementos en la clase ".detail-card-actions" */
   .detail-card .detail-card-actions {
     width: 100%;
     display: flex;
@@ -226,32 +259,37 @@ body::-webkit-scrollbar {
     gap: 0.5rem;
   }
 
+  /* Cambia el orden de visualización de los botones a 1 */
   .detail-card-actions button {
     order: 1;
   }
 
+  /* Establece el ancho máximo de ".primary-btn" y ".call-to-action" al 100% */
   .primary-btn,
   .call-to-action {
     max-width: 100%;
   }
 
+  /* Alinea los elementos dentro de la clase ".detail-card-actions" con espacio entre ellos */
   .detail-card .detail-card-actions {
     justify-content: space-between;
   }
+
+  /* Vuelve a definir el diseño de la clase ".detail" como cuadrícula con dos columnas */
   .detail {
     display: grid;
     grid-template-columns: 375px 1fr;
   }
 }
 
-@media (min-width: 992px) {
-}
-
+/* Define estilos para dispositivos con un ancho mínimo de 1200px */
 @media (min-width: 1200px) {
+  /* Elimina el margen superior de la clase ".detail-card" */
   .detail-card {
     margin-top: 0;
   }
 
+  /* Limita el ancho máximo de la imagen dentro de la clase ".detail-card-img" a 35vw (35% del ancho de la ventana) */
   .detail-card .detail-header .detail-card-img {
     max-width: 35vw;
   }

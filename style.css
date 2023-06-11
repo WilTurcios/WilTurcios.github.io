@@ -48,12 +48,6 @@
   gap: 1rem;
 }
 
-.main-hero-section .main-hero-content h1 {
-  font-size: calc(5vw + 1rem);
-  color: white;
-  line-height: 1;
-}
-
 .main-hero-section .main-hero-content p {
   color: var(--first-alpha-color);
   line-height: 1.5;

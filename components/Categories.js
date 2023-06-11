@@ -1,6 +1,6 @@
 import PRODUCTS from "../services/db.js";
 import { Filters } from "./Filters.js";
-import { createElement, getElement } from "../utilities.js";
+import { createElement, getElement } from "../utilities/utilities.js";
 
 export default function Categories({ PRODUCTS }) {
   const $categoryBtns = getElement({ selector: ".products-categories" });
