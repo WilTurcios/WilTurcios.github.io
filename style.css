@@ -1,164 +1,193 @@
-/* UTILITIES */
-
+/* Define el estilo de un botón primario */
 .primary-btn {
-  display: flex;
-  justify-content: space-between !important;
-  align-items: center;
+  display: flex; /* Muestra el botón como un elemento flex */
+  justify-content: space-between !important; /* Alinea el contenido del botón en ambos lados del espacio disponible */
+  align-items: center; /* Centra verticalmente el contenido del botón */
 }
 
 /* SITE STYLES */
 
 /* ***** HERO SECTION ***** */
+
+/* Define el estilo de la sección principal del héroe */
 .main-hero-section {
   background-image: linear-gradient(
     180deg,
     var(--first-color) 25%,
     transparent
-  );
+  ); /* Establece una imagen de fondo que es un degradado lineal */
 }
+
+/* Define el estilo del contenedor de la sección principal del héroe */
 .main-hero-section .container {
-  min-height: 100vh;
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  min-height: 100vh; /* Establece la altura mínima del contenedor al 100% de la altura de la ventana */
+  padding: 1.5rem; /* Establece el espaciado interno del contenedor */
+  display: flex; /* Muestra el contenedor como un elemento flex */
+  flex-direction: column; /* Establece la dirección del flex container como columna */
+  justify-content: center; /* Centra verticalmente el contenido del contenedor */
+  align-items: center; /* Centra horizontalmente el contenido del contenedor */
   /* gap: 1.5rem; */
-  margin-bottom: 4rem;
+  margin-bottom: 4rem; /* Establece el margen inferior del contenedor */
 }
 
+/* Define el estilo de la imagen principal del héroe */
 .main-hero-section .main-hero-img {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%; /* Establece el ancho de la imagen principal al 100% */
+  display: flex; /* Muestra la imagen principal como un elemento flex */
+  justify-content: center; /* Centra horizontalmente la imagen principal */
+  align-items: center; /* Centra verticalmente la imagen principal */
 }
 
+/* Define el estilo de la imagen dentro de la sección principal del héroe */
 .main-hero-section .main-hero-img img {
-  object-fit: cover;
-  object-position: center center;
+  object-fit: cover; /* Establece cómo se ajusta la imagen dentro de su contenedor */
+  object-position: center center; /* Establece la posición de la imagen dentro de su contenedor */
 }
 
+/* Define el estilo del contenido principal del héroe */
 .main-hero-section .main-hero-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  gap: 1rem;
+  display: flex; /* Muestra el contenido principal como un elemento flex */
+  justify-content: center; /* Centra horizontalmente el contenido principal */
+  align-items: center; /* Centra verticalmente el contenido principal */
+  flex-direction: column; /* Establece la dirección del flex container como columna */
+  text-align: center; /* Centra el texto horizontalmente dentro del contenedor */
+  gap: 1rem; /* Establece el espaciado entre elementos hijos */
 }
 
+/* Define el estilo de los párrafos dentro del contenido principal del héroe */
 .main-hero-section .main-hero-content p {
-  color: var(--first-alpha-color);
-  line-height: 1.5;
-  font-weight: bold;
-  letter-spacing: 1px;
+  color: var(
+    --first-alpha-color
+  ); /* Establece el color del texto de los párrafos */
+  line-height: 1.5; /* Establece la altura de línea de los párrafos */
+  font-weight: bold; /* Establece el grosor de fuente de los párrafos */
+  letter-spacing: 1px; /* Establece el espaciado entre letras de los párrafos */
 }
 
+/* Define el estilo de los elementos <span> dentro del contenido principal del héroe */
 .main-hero-section .main-hero-content p span {
-  font-size: 1.5rem;
-  font-weight: 900;
-  color: var(--second-color);
+  font-size: 1.5rem; /* Establece el tamaño de fuente de los elementos <span> */
+  font-weight: 900; /* Establece el grosor de fuente de los elementos <span> */
+  color: var(
+    --second-color
+  ); /* Establece el color del texto de los elementos <span> */
 }
 
+/* Define el estilo del contenedor de los botones principales del héroe */
 .main-hero-section .main-hero-content .main-hero-btn-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  gap: 0.5rem;
+  display: flex; /* Muestra el contenedor de botones como un elemento flex */
+  justify-content: space-between; /* Alinea el contenido del contenedor en ambos lados del espacio disponible */
+  align-items: center; /* Centra verticalmente el contenido del contenedor */
+  flex-direction: column; /* Establece la dirección del flex container como columna */
+  gap: 0.5rem; /* Establece el espaciado entre elementos hijos */
 }
 
 /* ***** PRODUCTS SECTION ***** */
+
+/* Define el estilo de la sección de productos de la página principal */
 .home-products-section {
-  width: 100vw;
-  height: max-content;
-  display: grid;
-  place-content: center;
-  gap: 1rem;
-}
-.home-products-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  gap: 1rem;
-  color: var(--gray-dark-color);
+  width: 100vw; /* Establece el ancho de la sección de productos al 100% del ancho de la ventana */
+  height: max-content; /* Establece la altura de la sección de productos en función de su contenido */
+  display: grid; /* Muestra la sección de productos como un grid container */
+  place-content: center; /* Centra el contenido del grid container */
+  gap: 1rem; /* Establece el espaciado entre las filas y columnas del grid container */
 }
 
+/* Define el estilo del contenido de la sección de productos de la página principal */
+.home-products-content {
+  display: flex; /* Muestra el contenido como un elemento flex */
+  flex-direction: column; /* Establece la dirección del flex container como columna */
+  align-items: center; /* Centra horizontalmente el contenido del contenedor */
+  justify-content: center; /* Centra verticalmente el contenido del contenedor */
+  text-align: center; /* Centra el texto horizontalmente dentro del contenedor */
+  gap: 1rem; /* Establece el espaciado entre elementos hijos */
+  color: var(
+    --gray-dark-color
+  ); /* Establece el color del texto del contenido */
+}
+
+/* Define el estilo de los encabezados h2 dentro del contenido de productos y de reseñas */
 .home-products-content h2,
 .home-reviews-section div h2 {
-  font-size: 2rem;
-  color: var(--first-color);
+  font-size: 2rem; /* Establece el tamaño de fuente de los encabezados h2 */
+  color: var(
+    --first-color
+  ); /* Establece el color del texto de los encabezados h2 */
 }
 
 /* ***** REVIEWS SECTION ***** */
+
+/* Define el estilo de la sección de reseñas de la página principal */
 .home-reviews-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: flex; /* Muestra la sección de reseñas como un elemento flex */
+  flex-direction: column; /* Establece la dirección del flex container como columna */
+  justify-content: center; /* Centra verticalmente el contenido del contenedor */
+  align-items: center; /* Centra horizontalmente el contenido del contenedor */
 }
 
+/* Define el estilo de las reseñas dentro de la sección de reseñas */
 .home-reviews-section .reviews {
-  width: 100vw;
-  padding: 1rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  gap: 1rem;
+  width: 100vw; /* Establece el ancho de las reseñas al 100% del ancho de la ventana */
+  padding: 1rem; /* Establece el espaciado interno de las reseñas */
+  display: grid; /* Muestra las reseñas como un grid container */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(270px, 1fr)
+  ); /* Crea columnas en el grid container que se ajustan automáticamente al tamaño mínimo de 270px y máximo de 1fr */
+  gap: 1rem; /* Establece el espaciado entre las filas y columnas del grid container */
 }
 
+/* Define el estilo de una reseña individual */
 .home-reviews-section .review {
-  background-color: var(--white-color);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  border-radius: 1rem;
-  box-shadow: var(--box-shadow);
+  background-color: var(
+    --white-color
+  ); /* Establece el color de fondo de la reseña */
+  display: flex; /* Muestra la reseña como un elemento flex */
+  flex-direction: column; /* Establece la dirección del flex container como columna */
+  justify-content: space-between; /* Distribuye el contenido de la reseña verticalmente con espacio disponible */
+  align-items: center; /* Centra horizontalmente el contenido de la reseña */
+  padding: 1rem; /* Establece el espaciado interno de la reseña */
+  border-radius: 1rem; /* Establece el radio de borde de la reseña */
+  box-shadow: var(
+    --box-shadow
+  ); /* Establece la sombra de la caja de la reseña */
 }
 
+/* Define el estilo de la imagen de una reseña */
 .home-reviews-section .review .review-img img {
-  border-radius: 50%;
-  width: 4rem;
+  border-radius: 50%; /* Establece el radio de borde de la imagen de la reseña como un círculo */
+  width: 4rem; /* Establece el ancho de la imagen de la reseña */
 }
 
+/* Define el estilo del contenido de una reseña */
 .home-reviews-section .review .review-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  display: flex; /* Muestra el contenido de la reseña como un elemento flex */
+  flex-direction: column; /* Establece la dirección del flex container como columna */
+  justify-content: center; /* Centra verticalmente el contenido de la reseña */
+  align-items: center; /* Centra horizontalmente el contenido de la reseña */
+  text-align: center; /* Centra el texto horizontalmente dentro del contenedor */
 }
 
+/* Define el estilo del encabezado h2 del contenido de una reseña */
 .home-reviews-section .review .review-content h2 {
-  color: var(--first-alpha-color);
-}
-.home-reviews-section .review .review-content p {
-  color: var(--gray-dark-color);
-  font-size: 0.75rem;
+  color: var(
+    --first-alpha-color
+  ); /* Establece el color del texto del encabezado h2 */
 }
 
-/* ***** ADITIONAL INFORMATION ***** */
+/* Define el estilo del párrafo del contenido de una reseña */
+.home-reviews-section .review .review-content p {
+  color: var(--gray-dark-color); /* Establece el color del texto del párrafo */
+  font-size: 0.75rem; /* Establece el tamaño de fuente del párrafo */
+}
 
 /* MEDIA QUERIES*/
 
-@media (min-width: 320px) {
-}
-
 @media (min-width: 375px) {
   .main-hero-section .main-hero-content .main-hero-btn-container {
-    flex-direction: row;
-    gap: 2rem;
+    flex-direction: row; /* Cambia la dirección del contenedor de los botones principales a fila */
+    gap: 2rem; /* Aumenta el espaciado entre los botones principales */
   }
-}
-
-@media (min-width: 414px) {
-}
-
-@media (min-width: 480px) {
 }
 
 @media (min-width: 768px) {
@@ -167,39 +196,36 @@
   }
 
   .main-hero-section .container {
-    flex-direction: row-reverse;
-    align-items: center;
+    flex-direction: row-reverse; /* Invierte la dirección de los elementos dentro del contenedor */
+    align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
     margin-bottom: 0;
   }
 
   .main-hero-section .main-hero-content {
-    justify-content: flex-start;
-    align-items: flex-start;
-    text-align: start;
-    gap: 4rem;
+    justify-content: flex-start; /* Alinea el contenido en el extremo izquierdo del contenedor */
+    align-items: flex-start; /* Alinea los elementos en el extremo izquierdo del contenedor */
+    text-align: start; /* Establece el texto alineado a la izquierda */
+    gap: 4rem; /* Establece el espacio entre los elementos del contenido principal */
   }
+
   .main-hero-section .main-hero-content h1 {
-    font-size: 3rem;
+    font-size: 3rem; /* Establece el tamaño de fuente del encabezado h1 */
   }
 
   .main-hero-section .main-hero-content .main-hero-btn-container a {
-    width: max-content;
-    font-size: 1rem;
-    text-align: center;
+    width: max-content; /* Establece el ancho del enlace al ancho máximo del contenido */
+    font-size: 1rem; /* Establece el tamaño de fuente del enlace */
+    text-align: center; /* Centra el texto del enlace horizontalmente */
   }
 }
 
 @media (min-width: 992px) {
   .main-hero-section .main-hero-img img {
-    width: 130%;
+    width: 130%; /* Amplía el ancho de la imagen al 130% */
   }
 }
-
-@media (min-width: 1200px) {
-}
-
 @media (min-width: 1600px) {
   .main-hero-section .container {
-    height: 50vh;
+    height: 50vh; /* Establece la altura del contenedor al 50% de la altura de la ventana gráfica (viewport) */
   }
 }

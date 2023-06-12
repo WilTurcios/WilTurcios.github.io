@@ -2,7 +2,10 @@ import { createElement, delay, getElement } from "../utilities/utilities.js";
 
 let isBought = false;
 
-/* FUNCION PARA OFTENER EL COSTO TOTAL DE TODOS LOS PRODUCTOS EN EL CARRITO */
+/**
+ * Obtiene el monto total de los productos en el carrito.
+ * @returns {number} - Monto total.
+ */
 function getTotalAmount() {
   const cartElements = JSON.parse(localStorage.getItem("cartElements"));
 
@@ -20,8 +23,11 @@ function getTotalAmount() {
   return totalAmount;
 }
 
-/* FUNCION PARA CREAR UNA TARGETA DE PRODUCTO DENTRO DEL CARRITO */
-
+/**
+ * Crea el elemento del carrito de compra.
+ * @param {object} param - Parámetros del producto.
+ * @returns {HTMLElement} - Elemento del carrito de compra.
+ */
 function createCartElement({ product }) {
   const {
     id,
@@ -65,7 +71,7 @@ function createCartElement({ product }) {
         <span>$${total}</span>
       </div>
       <div>
-        <button  class="del-item" id=${id}>
+        <button class="del-item" id=${id}>
           <svg style="fill: #ffffff;" id=${id} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path id=${id} d="M6 7H5v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7H6zm4 12H8v-9h2v9zm6 0h-2v-9h2v9zm.618-15L15 2H9L7.382 4H3v2h18V4z"></path>
           </svg>
@@ -77,8 +83,10 @@ function createCartElement({ product }) {
   return $cartItem;
 }
 
-/* FUNCION PARA CREAR LAS ACCIONES QUE SE PUEDEN REALIZAR DENTRO DEL CARRITO ( elminar todos los elementos del carrito y comprarlos) */
-
+/**
+ * Crea los elementos de acción del carrito de compra.
+ * @returns {HTMLElement} - Elementos de acción del carrito de compra.
+ */
 function createCartActionElements() {
   const $actions = createElement({
     elementType: "div",
@@ -104,8 +112,11 @@ function createCartActionElements() {
   return $actions;
 }
 
-/* FUNCIÓN QUE SE EJECUTA CUANDO EL CARRITO ESTÁ VACÍO */
-
+/**
+ * Vacía el carrito de compra y recarga la página.
+ * @param {HTMLElement} param - Parámetros del elemento del carrito de compra.
+ * @returns {HTMLElement} - Elemento del carrito vacío.
+ */
 function emptyCart({ element }) {
   return (element.outerHTML = `
     <div class="empty-cart">
@@ -120,7 +131,9 @@ function emptyCart({ element }) {
     `);
 }
 
-/* FUNCION QUE CREA EL CARRITO (dentro ejecuta las funciones createCartElement y createCartActionElements ) */
+/**
+ * Controla el comportamiento del carrito de compra.
+ */
 export default function Cart() {
   const $cart = getElement({ selector: ".cart" });
   const products = JSON.parse(localStorage.getItem("cartElements"));
@@ -138,14 +151,18 @@ export default function Cart() {
   }
 }
 
-/* FUNCION QUE ELEMINA TODOS LOS ELEMENTOS DEL CARRITO */
-
+/**
+ * Limpia el carrito de compra y recarga la página.
+ */
 export function clearCart() {
   localStorage.setItem("cartElements", JSON.stringify([]));
   location.reload();
 }
 
-/* FUNCION QUE ELEMINA UN ELEMENTO EN ESPECIFICO DEL CARRITO */
+/**
+ * Elimina un elemento del carrito de compra y recarga la página.
+ * @param {object} param - Parámetros del elemento a eliminar.
+ */
 function deleteCartItem({ id }) {
   let cartItems = JSON.parse(localStorage.getItem("cartElements"));
 
@@ -153,8 +170,6 @@ function deleteCartItem({ id }) {
   localStorage.setItem("cartElements", JSON.stringify(filteredItems));
   location.reload();
 }
-
-/* MANEJO DE TODOS LOS CLICKS QUE SE HACEN DENTRO DEL CARRITO */
 
 document.addEventListener("click", (e) => {
   if (e.target.matches(".clear-cart") || e.target.matches(".clear-cart *")) {

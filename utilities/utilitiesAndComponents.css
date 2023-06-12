@@ -181,7 +181,7 @@ p {
 /* Estilos para los botones primarios y llamadas a la acción */
 .primary-btn,
 .call-to-action {
-  max-width: max-content; /* Ancho máximo basado en el contenido */
+  min-width: max-content; /* Ancho máximo basado en el contenido */
   height: max-content; /* Altura máxima basada en el contenido */
   color: white; /* Color de texto */
   background-color: var(--first-color); /* Color de fondo personalizado */

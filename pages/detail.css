@@ -18,7 +18,7 @@ body::-webkit-scrollbar {
 
 /* Estilos para el botón de retroceso */
 .detail-card .back {
-  position: absolute; /* Establece la posición del botón como absoluta */
+  position: fixed; /* Establece la posición del botón como fija */
   top: 5rem; /* Establece la posición superior del botón */
   left: 0.5rem; /* Establece la posición izquierda del botón */
   width: 2rem; /* Establece el ancho del botón */
@@ -30,6 +30,7 @@ body::-webkit-scrollbar {
   justify-content: center; /* Centra los elementos horizontalmente dentro del botón */
   align-items: center; /* Centra los elementos verticalmente dentro del botón */
   cursor: pointer; /* Establece el cursor del botón como un puntero */
+  z-index: 999;
 }
 
 /* Estilos para el ícono de retroceso */
@@ -180,7 +181,7 @@ body::-webkit-scrollbar {
   }
 
   .call-to-action {
-    max-width: max-content; /* Establece el ancho máximo de la acción principal al tamaño máximo del contenido */
+    min-width: max-content; /* Establece el ancho mínimo de la acción principal al tamaño máximo del contenido */
   }
 
   .detail-card-actions button.call-to-action {
@@ -267,7 +268,7 @@ body::-webkit-scrollbar {
   /* Establece el ancho máximo de ".primary-btn" y ".call-to-action" al 100% */
   .primary-btn,
   .call-to-action {
-    max-width: 100%;
+    min-width: 100%;
   }
 
   /* Alinea los elementos dentro de la clase ".detail-card-actions" con espacio entre ellos */
