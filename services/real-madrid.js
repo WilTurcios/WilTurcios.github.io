@@ -2,8 +2,8 @@ const real_madrid_porteros_locales = [
   {
     id: 48,
     productName: "  Real Madrid Portero Local Temporada 2013 - 2014",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-portero-local-13-14.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -23,8 +23,8 @@ const real_madrid_porteros_locales = [
   {
     id: 49,
     productName: "  Real Madrid Portero Local Temporada 2014 - 2015",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-portero-local-14-15.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -44,8 +44,8 @@ const real_madrid_porteros_locales = [
   {
     id: 50,
     productName: "  Real Madrid Portero Local Temporada 2015 - 2016",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-portero-local-15-16.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -65,8 +65,8 @@ const real_madrid_porteros_locales = [
   {
     id: 51,
     productName: "  Real Madrid Portero Local Temporada 2016 - 2017",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-portero-local-16-17.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -86,8 +86,8 @@ const real_madrid_porteros_locales = [
   {
     id: 52,
     productName: "  Real Madrid Portero Local Temporada 2017 - 2018",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-portero-local-17-18.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -107,8 +107,8 @@ const real_madrid_porteros_locales = [
   {
     id: 53,
     productName: "  Real Madrid Portero Local Temporada 2018 - 2019",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-portero-local-18-19.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -128,8 +128,8 @@ const real_madrid_porteros_locales = [
   {
     id: 54,
     productName: "  Real Madrid Portero Local Temporada 2019 - 2020",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-portero-local-19-20.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -149,8 +149,8 @@ const real_madrid_porteros_locales = [
   {
     id: 55,
     productName: "  Real Madrid Portero Local Temporada 2020 - 2021",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-portero-local-20-21.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -170,8 +170,8 @@ const real_madrid_porteros_locales = [
   {
     id: 56,
     productName: "  Real Madrid Portero Local Temporada 2021 - 2022",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-portero-local-21-22.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -191,8 +191,8 @@ const real_madrid_porteros_locales = [
   {
     id: 57,
     productName: "  Real Madrid Portero Local Temporada 2022 - 2023",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-portero-22-23.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -214,8 +214,8 @@ const real_madrid_porteros_visitante = [
   {
     id: 58,
     productName: "  Real Madrid Portero Visitante Temporada 2013 - 2014",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-portero-visitante-13-14.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -235,8 +235,8 @@ const real_madrid_porteros_visitante = [
   {
     id: 61,
     productName: "  Real Madrid Portero Visitante Temporada 2016 - 2017",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-portero-visitante-16-17.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -256,8 +256,8 @@ const real_madrid_porteros_visitante = [
   {
     id: 62,
     productName: "  Real Madrid Portero Visitante Temporada 2017 - 2018",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-portero-visitante-17-18.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -277,8 +277,8 @@ const real_madrid_porteros_visitante = [
   {
     id: 63,
     productName: "  Real Madrid Portero Visitante Temporada 2018 - 2019",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-portero-visitante-18-19.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -298,8 +298,8 @@ const real_madrid_porteros_visitante = [
   {
     id: 64,
     productName: "  Real Madrid Portero Visitante Temporada 2019 - 2020",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-portero-visitante-19-20.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -319,8 +319,8 @@ const real_madrid_porteros_visitante = [
   {
     id: 65,
     productName: "  Real Madrid Portero Visitante Temporada 2020 - 2021",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-portero-visitante-20-21.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -340,8 +340,8 @@ const real_madrid_porteros_visitante = [
   {
     id: 66,
     productName: "  Real Madrid Portero visitante Temporada 2021 - 2022",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-portero-visitante-21-22.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -363,8 +363,8 @@ const real_madrid_locales = [
   {
     id: 67,
     productName: "  Real Madrid Local Temporada 2013 - 2014",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-local-13-14.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -384,8 +384,8 @@ const real_madrid_locales = [
   {
     id: 68,
     productName: "  Real Madrid Local Temporada 2014 - 2015",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-local-14-15.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -405,8 +405,8 @@ const real_madrid_locales = [
   {
     id: 69,
     productName: "  Real Madrid Local Temporada 2015 - 2016",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-local-15-16.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -426,8 +426,8 @@ const real_madrid_locales = [
   {
     id: 70,
     productName: "  Real Madrid Local Temporada 2016 - 2017",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-local-16-17.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -447,8 +447,8 @@ const real_madrid_locales = [
   {
     id: 71,
     productName: "  Real Madrid Local Temporada 2017 - 2018",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-local-17-18.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -468,8 +468,8 @@ const real_madrid_locales = [
   {
     id: 72,
     productName: "  Real Madrid Local Temporada 2018 - 2019",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-local-18-19.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -489,8 +489,8 @@ const real_madrid_locales = [
   {
     id: 73,
     productName: "  Real Madrid Local Temporada 2019 - 2020",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-local-19-20.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -510,8 +510,8 @@ const real_madrid_locales = [
   {
     id: 74,
     productName: "  Real Madrid Local Temporada 2020 - 2021",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-local-20-21.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -531,8 +531,8 @@ const real_madrid_locales = [
   {
     id: 75,
     productName: "  Real Madrid Local Temporada 2021 - 2022",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-local-21-22.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -552,8 +552,8 @@ const real_madrid_locales = [
   {
     id: 76,
     productName: "  Real Madrid Local Temporada 2022 - 2023",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-local-22-23.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -573,8 +573,8 @@ const real_madrid_locales = [
   {
     id: 77,
     productName: "  Real Madrid Local Temporada 2023 - 2024",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-local-23-24.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -596,8 +596,8 @@ const real_madrid_visitantes = [
   {
     id: 78,
     productName: "  Real Madrid Visitante Temporada 2013 - 2014",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-visitante-13-14.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -617,8 +617,8 @@ const real_madrid_visitantes = [
   {
     id: 79,
     productName: "  Real Madrid Visitante Temporada 2014 - 2015",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-visitante-14-15.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -638,8 +638,8 @@ const real_madrid_visitantes = [
   {
     id: 80,
     productName: "  Real Madrid Visitante Temporada 2015 - 2016",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-visitante-15-16.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -659,8 +659,8 @@ const real_madrid_visitantes = [
   {
     id: 81,
     productName: "  Real Madrid Visitante Temporada 2016 - 2017",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-visitante-16-17.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -680,8 +680,8 @@ const real_madrid_visitantes = [
   {
     id: 82,
     productName: "  Real Madrid Visitante Temporada 2017 - 2018",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-visitante-17-18.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -701,8 +701,8 @@ const real_madrid_visitantes = [
   {
     id: 83,
     productName: " Real Madrid Visitante Temporada 2018 - 2019",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-visitante-18-19.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -722,8 +722,8 @@ const real_madrid_visitantes = [
   {
     id: 84,
     productName: "  Real Madrid Visitante Temporada 2019 - 2020",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-visitante-19-20.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -743,8 +743,8 @@ const real_madrid_visitantes = [
   {
     id: 85,
     productName: "  Real Madrid Visitante Temporada 2020 - 2021",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-visitante-20-21.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -764,8 +764,8 @@ const real_madrid_visitantes = [
   {
     id: 86,
     productName: "  Real Madrid Visitante Temporada 2021 - 2022",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-visitante-21-22.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -785,8 +785,8 @@ const real_madrid_visitantes = [
   {
     id: 87,
     productName: "  Real Madrid Visitante 1 Temporada 2022 - 2023",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-visitante-1-22-23.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -806,8 +806,8 @@ const real_madrid_visitantes = [
   {
     id: 1000,
     productName: "  Real Madrid Visitante 2 Temporada 2022 - 2023",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-visitante-2-22-23.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -829,8 +829,8 @@ const real_madrid_terceras = [
   {
     id: 88,
     productName: "Real Madrid Tercera, Temporada 2013 - 2014",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-third-13-14.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -850,8 +850,8 @@ const real_madrid_terceras = [
   {
     id: 89,
     productName: "Real Madrid Tercera, Temporada 2014 - 2015",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-third-14-15.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -871,8 +871,8 @@ const real_madrid_terceras = [
   {
     id: 90,
     productName: "Real Madrid Tercera, Temporada 2015 - 2016",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-third-15-16.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -892,8 +892,8 @@ const real_madrid_terceras = [
   {
     id: 91,
     productName: "Camiseta Real Madrid Tercera, Temporada 2016 - 2017",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-third-16-17.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -913,8 +913,8 @@ const real_madrid_terceras = [
   {
     id: 93,
     productName: "Real Madrid Tercera, Temporada 2018 - 2019",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-third-18-19.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -934,8 +934,8 @@ const real_madrid_terceras = [
   {
     id: 94,
     productName: "Real Madrid Tercera, Temporada 2019 - 2020",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-third-19-20.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -955,8 +955,8 @@ const real_madrid_terceras = [
   {
     id: 95,
     productName: "Real Madrid Tercera, Temporada 2020 - 2021",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-third-20-21.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -976,8 +976,8 @@ const real_madrid_terceras = [
   {
     id: 96,
     productName: "Real Madrid Tercera, Temporada 2021 - 2022",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-third-21-22.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -997,8 +997,8 @@ const real_madrid_terceras = [
   {
     id: 97,
     productName: "Real Madrid Tercera, Temporada 2022 - 2023",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-third-22-23.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -1018,8 +1018,8 @@ const real_madrid_terceras = [
   {
     id: 98,
     productName: "Real Madrid Cuarta, Temporada 2021 - 2022",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-third-21-22.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -1039,8 +1039,8 @@ const real_madrid_terceras = [
   {
     id: 99,
     productName: "Real Madrid GK 2, Temporada 2022 - 2023",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-gk-2-22-23.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {
@@ -1060,8 +1060,8 @@ const real_madrid_terceras = [
   {
     id: 100,
     productName: "Real Madrid GK 3, Temporada 2022 - 2023",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl: "../assets/real_madrid/real-madrid-GK-3-22-23.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
     pricing: {

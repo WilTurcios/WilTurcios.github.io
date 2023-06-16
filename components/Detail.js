@@ -31,9 +31,12 @@ export default function Detail({ target }) {
     </div>
     <div class="detail-body">
       <div class="detail-card-content-container">
+        <h2 style="text-align: center;">${productName}</h2>
+        
         <div class="detail-card-content">
-          <h2>${productName}</h2>
+          <h3>Precio:</h3>
           <span id="price" >$${pricing.S}</span>
+          <h3>Descripción:</h3>
           <p>${productDescription}</p>
         </div>
         <div class="detail-card-actions">

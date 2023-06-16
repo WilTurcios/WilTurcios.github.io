@@ -2,8 +2,8 @@ const golden_state_warriors_association = [
   {
     id: 225,
     productName: "Golden State Warriors, association 2022 - 2023",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl:
       "../assets/golden_state_w/golden-state-warriors-2022-23-association-jersey.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
@@ -24,8 +24,8 @@ const golden_state_warriors_association = [
   {
     id: 226,
     productName: "Golden State Warriors, association 2021 - 2022",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl:
       "../assets/golden_state_w/golden-state-warriors-2021-22-association-jersey.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
@@ -46,8 +46,8 @@ const golden_state_warriors_association = [
   {
     id: 228,
     productName: "Golden State Warriors, association 2017 - 2019",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl:
       "../assets/golden_state_w/golden-state-warriors-2017-19-association-jersey.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
@@ -70,8 +70,8 @@ const golden_state_warriors_icon = [
   {
     id: 231,
     productName: "Golden State Warriors, icon 2022 - 2023",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl:
       "../assets/golden_state_w/golden-state-warriors-2022-23-icon-jersey.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
@@ -92,8 +92,8 @@ const golden_state_warriors_icon = [
   {
     id: 233,
     productName: "Golden State Warriors, icon 2021 - 2022",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl:
       "../assets/golden_state_w/golden-state-warriors-2021-22-icon-jersey.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
@@ -114,8 +114,8 @@ const golden_state_warriors_icon = [
   {
     id: 235,
     productName: "Golden State Warriors, icon 2017 - 2019",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl:
       "../assets/golden_state_w/golden-state-warriors-2017-19-icon-jersey.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
@@ -138,8 +138,8 @@ const golden_state_warriors_statement = [
   {
     id: 236,
     productName: "Golden State Warriors, statement 2022 - 2023",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl:
       "../assets/golden_state_w/golden-state-warriors-2022-23-statement-jersey.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
@@ -160,8 +160,8 @@ const golden_state_warriors_statement = [
   {
     id: 238,
     productName: "Golden State Warriors, statement 2019 - 2020",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl:
       "../assets/golden_state_w/golden-state-warriors-2019-20-statement-jersey.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
@@ -182,8 +182,8 @@ const golden_state_warriors_statement = [
   {
     id: 241,
     productName: "Golden State Warriors, statement 2017 - 2019",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl:
       "../assets/golden_state_w/golden-state-warriors-2017-19-statement-jersey.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
@@ -206,8 +206,8 @@ const golden_state_warriors_city = [
   {
     id: 242,
     productName: "Golden State Warriors, city 2022 - 2023",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl:
       "../assets/golden_state_w/golden-state-warriors-2022-23-city-jersey.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
@@ -228,8 +228,8 @@ const golden_state_warriors_city = [
   {
     id: 243,
     productName: "Golden State Warriors, city 2020 - 2021",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl:
       "../assets/golden_state_w/golden-state-warriors-2020-21-city-jersey.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
@@ -250,8 +250,8 @@ const golden_state_warriors_city = [
   {
     id: 244,
     productName: "Golden State Warriors, city 2019 - 2020",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl:
       "../assets/golden_state_w/golden-state-warriors-2019-20-city-jersey.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
@@ -272,8 +272,8 @@ const golden_state_warriors_city = [
   {
     id: 245,
     productName: "Golden State Warriors, city 2021 - 2022",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl:
       "../assets/golden_state_w/golden-state-warriors-2021-22-city-jersey.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
@@ -294,8 +294,8 @@ const golden_state_warriors_city = [
   {
     id: 246,
     productName: "Golden State Warriors, city 2018 - 2019",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl:
       "../assets/golden_state_w/golden-state-warriors-2018-19-city-jersey.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
@@ -318,8 +318,8 @@ const golden_state_warriors_classic = [
   {
     id: 248,
     productName: "Golden State Warriors, classic 2022 - 2023",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl:
       "../assets/golden_state_w/golden-state-warriors-2022-23-classic-jersey.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
@@ -340,8 +340,8 @@ const golden_state_warriors_classic = [
   {
     id: 250,
     productName: "Golden State Warriors, classic 2019 - 2020",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl:
       "../assets/golden_state_w/golden-state-warriors-2019-20-classic-jersey.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
@@ -362,8 +362,8 @@ const golden_state_warriors_classic = [
   {
     id: 251,
     productName: "Golden State Warriors, classic 2021 - 2022",
-    productDescription:
-      "Producto de alta calidad, con la mejor tela, duradero etc etc etc, super caro tambien, no se que mas poner.",
+   productDescription:
+      "Camiseta deportiva cómoda y estilizada, diseñada con materiales de alta calidad. Ideal para cualquier actividad física, brinda libertad de movimiento y durabilidad. Un clásico atemporal para tu rutina deportiva.",
     imgUrl:
       "../assets/golden_state_w/golden-state-warriors-2021-22-classic-jersey.jpg",
     sizes: ["S", "M", "L", "XL", "XXL"],
