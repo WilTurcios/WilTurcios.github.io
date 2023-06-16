@@ -3,6 +3,11 @@
   display: flex; /* Muestra el botón como un elemento flex */
   justify-content: space-between !important; /* Alinea el contenido del botón en ambos lados del espacio disponible */
   align-items: center; /* Centra verticalmente el contenido del botón */
+  width: max-content !important;
+}
+
+.call-to-action {
+  width: 100%;
 }
 
 /* SITE STYLES */
@@ -104,6 +109,10 @@
   color: var(
     --gray-dark-color
   ); /* Establece el color del texto del contenido */
+  border-radius: 20px;
+  margin: 0 1rem;
+  padding: 1.5rem;
+  font-weight: bold;
 }
 
 /* Define el estilo de los encabezados h2 dentro del contenido de productos y de reseñas */
@@ -111,10 +120,9 @@
 .home-reviews-section div h2 {
   font-size: 2rem; /* Establece el tamaño de fuente de los encabezados h2 */
   color: var(
-    --first-color
+    --second-color
   ); /* Establece el color del texto de los encabezados h2 */
 }
-
 /* ***** REVIEWS SECTION ***** */
 
 /* Define el estilo de la sección de reseñas de la página principal */

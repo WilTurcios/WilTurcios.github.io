@@ -79,28 +79,28 @@ export function PaymentModal() {
   $paymentModal.innerHTML = `
       <h2>Formulario de Compra</h2>
       <div>
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Ángel"  pattern="[A-Za-z]+" required>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" placeholder="Ángel" required>
       </div>
 
       <div>
-        <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido" name="apellido" placeholder="Durán"  pattern="[A-Za-z]+" required>
+        <label for="lastname">Apellido:</label>
+        <input type="text" id="lastname" name="lastname" placeholder="Durán" required>
       </div>
 
       <div>
-        <label for="direccion">Código Postal:</label>
-        <input type="text" id="direccion" name="direccion" placeholder="13578" required>
+        <label for="postalCode">Código Postal:</label>
+        <input type="text" id="postalCode" name="postalCode" placeholder="13578" required>
       </div>
 
       <div>
-        <label for="tarjeta">Tarjeta de Crédito:</label>
-        <input type="text" id="tarjeta" name="tarjeta"  placeholder="4000 0000 0000 0002" pattern="[0-9]{16}" required>
+        <label for="card">Tarjeta de Crédito:</label>
+        <input type="text" id="card" name="card"  placeholder="4000 0000 0000 0002" required>
       </div>
 
       <div>
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" placeholder="Dejanos un mensaje con información adicional"></textarea>
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" placeholder="Dejanos un mensaje con información adicional"></textarea>
       </div>
         <button id="buy" class="call-to-action" style="--color: var(--first-color)" type="submit">Comprar</button>
         <button class="call-to-action close-dialog" style="--color: var(--second-color)" type="button">Cancelar</button>

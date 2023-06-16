@@ -555,6 +555,7 @@ p {
   align-items: center; /* Centrar horizontalmente */
   gap: 2rem; /* Espacio entre elementos internos */
   padding: 1rem; /* Relleno de 1rem */
+  position: relative;
 }
 
 .form div {
@@ -564,6 +565,7 @@ p {
   flex-direction: column; /* Dirección de columna */
   justify-content: center; /* Centrar verticalmente */
   align-items: flex-start; /* Alinear a la izquierda horizontalmente */
+  position: relative;
 }
 
 .form div:last-of-type {
@@ -631,6 +633,25 @@ p {
   transform: scale(1.1); /* Escala de transformación de 1.1 */
 }
 
+.invalid,
+.valid {
+  position: absolute;
+  top: 110%;
+  z-index: 99;
+  left: 0;
+  width: 100%;
+  height: max-content;
+  padding: 0.5rem;
+  background-color: red;
+  color: var(--white-color);
+  font-weight: bold;
+  font-size: 0.6rem;
+  text-align: center;
+  border-radius: 5px;
+}
+.valid {
+  background-color: lightgreen;
+}
 @media (min-width: 480px) {
   .products-cards {
     grid-template-columns: repeat(

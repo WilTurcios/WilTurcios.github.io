@@ -13,12 +13,10 @@ const arsenal_fc_porteros_locales = [
       XL: 16,
       XXL: 17,
     },
-    stock: 20,
     category: "Arsenal FC",
     productKeywords:
       "Product, arsenal fc, blanca cr7 cristiano ronaldo fútbol futbol soccer hombre masculino",
     generalCategory: "Futbol",
-    rating: 4.59,
   },
   {
     id: 133,
@@ -34,12 +32,10 @@ const arsenal_fc_porteros_locales = [
       XL: 16,
       XXL: 17,
     },
-    stock: 20,
     category: "Arsenal FC",
     productKeywords:
       "Product, arsenal fc, blanca cr7 cristiano ronaldo fútbol futbol soccer hombre masculino",
     generalCategory: "Futbol",
-    rating: 4.59,
   },
   {
     id: 134,
@@ -55,12 +51,10 @@ const arsenal_fc_porteros_locales = [
       XL: 16,
       XXL: 17,
     },
-    stock: 20,
     category: "Arsenal FC",
     productKeywords:
       "Product, arsenal fc, blanca cr7 cristiano ronaldo fútbol futbol soccer hombre masculino",
     generalCategory: "Futbol",
-    rating: 4.59,
   },
   {
     id: 135,
@@ -76,12 +70,10 @@ const arsenal_fc_porteros_locales = [
       XL: 16,
       XXL: 17,
     },
-    stock: 20,
     category: "Arsenal FC",
     productKeywords:
       "Product, arsenal fc, blanca fútbol futbol soccer hombre masculino",
     generalCategory: "Futbol",
-    rating: 4.59,
   },
   {
     id: 136,
@@ -97,12 +89,10 @@ const arsenal_fc_porteros_locales = [
       XL: 16,
       XXL: 17,
     },
-    stock: 20,
     category: "Arsenal FC",
     productKeywords:
       "Product, arsenal fc, blanca fútbol futbol soccer hombre masculino",
     generalCategory: "Futbol",
-    rating: 4.59,
   },
   {
     id: 137,
@@ -118,12 +108,10 @@ const arsenal_fc_porteros_locales = [
       XL: 16,
       XXL: 17,
     },
-    stock: 20,
     category: "Arsenal FC",
     productKeywords:
       "Product, arsenal fc, blanca fútbol futbol soccer hombre masculino",
     generalCategory: "Futbol",
-    rating: 4.59,
   },
   {
     id: 138,
@@ -139,12 +127,10 @@ const arsenal_fc_porteros_locales = [
       XL: 16,
       XXL: 17,
     },
-    stock: 20,
     category: "Arsenal FC",
     productKeywords:
       "Product, arsenal fc, blanca fútbol futbol soccer hombre masculino",
     generalCategory: "Futbol",
-    rating: 4.59,
   },
 ];
 const arsenal_fc_porteros_visitante = [
@@ -162,12 +148,10 @@ const arsenal_fc_porteros_visitante = [
       XL: 16,
       XXL: 17,
     },
-    stock: 20,
     category: "Arsenal FC",
     productKeywords:
       "Product, arsenal fc, blanca cr7 cristiano ronaldo fútbol futbol soccer hombre masculino",
     generalCategory: "Futbol",
-    rating: 4.59,
   },
   {
     id: 140,
@@ -183,12 +167,10 @@ const arsenal_fc_porteros_visitante = [
       XL: 16,
       XXL: 17,
     },
-    stock: 20,
     category: "Arsenal FC",
     productKeywords:
       "Product, arsenal fc, blanca cr7 cristiano ronaldo fútbol futbol soccer hombre masculino",
     generalCategory: "Futbol",
-    rating: 4.59,
   },
   {
     id: 141,
@@ -204,12 +186,10 @@ const arsenal_fc_porteros_visitante = [
       XL: 16,
       XXL: 17,
     },
-    stock: 20,
     category: "Arsenal FC",
     productKeywords:
       "Product, arsenal fc, blanca cr7 cristiano ronaldo fútbol futbol soccer hombre masculino",
     generalCategory: "Futbol",
-    rating: 4.59,
   },
   {
     id: 142,
@@ -225,12 +205,10 @@ const arsenal_fc_porteros_visitante = [
       XL: 16,
       XXL: 17,
     },
-    stock: 20,
     category: "Arsenal FC",
     productKeywords:
       "Product, arsenal fc, blanca fútbol futbol soccer hombre masculino",
     generalCategory: "Futbol",
-    rating: 4.59,
   },
   {
     id: 143,
@@ -246,12 +224,10 @@ const arsenal_fc_porteros_visitante = [
       XL: 16,
       XXL: 17,
     },
-    stock: 20,
     category: "Arsenal FC",
     productKeywords:
       "Product, arsenal fc, blanca fútbol futbol soccer hombre masculino",
     generalCategory: "Futbol",
-    rating: 4.59,
   },
   {
     id: 144,
@@ -267,12 +243,10 @@ const arsenal_fc_porteros_visitante = [
       XL: 16,
       XXL: 17,
     },
-    stock: 20,
     category: "Arsenal FC",
     productKeywords:
       "Product, arsenal fc, blanca fútbol futbol soccer hombre masculino",
     generalCategory: "Futbol",
-    rating: 4.59,
   },
 ];
 const arsenal_fc_locales = [

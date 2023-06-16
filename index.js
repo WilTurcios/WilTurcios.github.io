@@ -12,6 +12,7 @@ import {
   closeModal,
   submitCartForm,
 } from "./components/PaymentModal.js";
+import FormValidator from "./components/FormValidation.js";
 
 // Obtener referencias al documento y la ubicación actual
 const d = document;
@@ -62,6 +63,7 @@ d.addEventListener("click", (e) => {
     e.target.matches(".buy-products *")
   ) {
     CreatePaymentModal({ insertAfter: ".main" });
+    FormValidator({ target: ".form" });
   }
 
   // Cerrar el modal de pago cuando se hace clic en el botón de cerrar
@@ -76,10 +78,10 @@ d.addEventListener("click", (e) => {
 // Evento que se ejecuta cuando se envía un formulario
 document.addEventListener("submit", (e) => {
   // Prevenir el comportamiento predeterminado en la página de carrito
+  const { target } = e;
+  e.preventDefault();
   if (path === "/pages/cart.html") {
-    e.preventDefault();
     if (e.target.matches(".form")) {
-      const { target } = e;
       submitCartForm({ target });
     }
   }
@@ -160,6 +162,9 @@ d.addEventListener("DOMContentLoaded", (e) => {
     Cart();
   }
 
+  if (path === "/pages/contact.html") {
+    FormValidator({ target: ".form" });
+  }
   // Cargar los detalles del producto en la página de detalle del producto
   if (path === "/pages/detail.html") {
     Detail({ target: ".detail" });

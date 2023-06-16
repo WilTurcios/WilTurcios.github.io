@@ -137,8 +137,7 @@
   border-radius: 10px; /* Radio de borde de 10px */
   transform: translate(-50%, -50%); /* Traducción de -50% en ambos ejes */
   gap: 1rem; /* Espacio entre elementos de 1rem */
-  background-color: var(--white-alpha-color); /* Color de fondo personalizado */
-  backdrop-filter: blur(20px); /* Filtro de fondo desenfocado */
+  background-color: var(--white-color); /* Color de fondo personalizado */
 }
 
 .success-modal-bg {

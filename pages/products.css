@@ -117,6 +117,7 @@ body::-webkit-scrollbar {
   display: flex;
   justify-content: space-between !important; /* Justifica espacio entre los elementos */
   align-items: center; /* Centra verticalmente los elementos */
+  width: max-content !important; /* reseteado del ancho */
 }
 
 /* IMPORTANTE: los estilos de esta sección se toman de la hoja "utilities.css" */
